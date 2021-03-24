@@ -31,6 +31,15 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		
 	}
+	@ExceptionHandler(CustomerNotFoundException.class)
+	public ResponseEntity<Object> handleExceptions( CustomerNotFoundException exception, WebRequest webRequest) {
+		logger.error(exception.getMessage());
+		ExceptionResponse response = new ExceptionResponse();
+		response.setDateTime(LocalDateTime.now());
+		response.setMessage(exception.getMessage());
+		ResponseEntity<Object> entity = new ResponseEntity<>(response, HttpStatus.NOT_FOUND); 
+		return entity;
 	
 	
+}
 }
