@@ -23,35 +23,42 @@ public class AddressRestController {
 	 AddressService addressService;
 	 
 
+
 		@PostMapping("/address")
-		public Address addAddress(@RequestBody Address add){
-			Address address = addressService.addAddress(add);
-			return add;
-		}	
-		
-		@PutMapping("/address")
-		public Address update(@RequestBody Address add) {
-			Address address = addressService.updateAddress(add);
-			return address;
+		public Address addAddress(@RequestBody Address add)
+		{
+			//logger.info("Address addAddress()");
+			return addressService.addAddress(add);
 		}
 		
-		@DeleteMapping("/address/{addressId}") 
-			public Address removeAddress(@PathVariable("addressId") int addressId) {
-			return addressService.removeAddress(addressId);
-			
-		}
-		
-		@GetMapping("/address/{addressId}")
-		public List<Address> viewAllAddress(@PathVariable("addressId")int addressId) {
-			
-			return addressService.viewAllAddress(addressId);
-			
-		}
-		/*
-		@GetMapping("/address/{addressId}")
-		public Address viewAddress(@PathVariable("address") int addressId) {
-			return addressService.viewAddress(addressId);
-			
+		/*@GetMapping("/address/{addId}")
+		public List<Address> viewAllAddress(@PathVariable("addId")int addId)
+		{
+			//logger.info("Address viewAllAddress()");
+			return addService.viewAllAddress(addId);
 		}*/
+		
+		@GetMapping("/address/{addId}")
+		public Address viewAddress(@PathVariable("addId")int addId)
+		{
+			//logger.info("Address viewAddress()");
+			return addressService.viewAddress(addId);
+		}
+		@PutMapping("/address")
+		public Address updateAddress(@RequestBody Address add)
+		{
+			//logger.info("Address updateAddress()");
+			return addressService.updateAddress(add);
+		}
+		
+		@DeleteMapping("/address/{addId}")
+		public Address removeCustomer(@PathVariable("addId")int addId)
+		{
+			//logger.info("Address removeAddress()");
+			return addressService.removeAddress(addId);
+		}
+		
+		
+		
 		
 }

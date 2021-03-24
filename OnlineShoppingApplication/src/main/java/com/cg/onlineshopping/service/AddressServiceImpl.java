@@ -63,14 +63,12 @@ public class AddressServiceImpl implements AddressService {
 	
 	@Override
 	public Address viewAddress(int addId) {
-		
-		Optional<Address> viewAdd = addRepo.findById(addId);
-		if(!viewAdd.isPresent())
+		Optional<Address> add = addRepo.findById(addId);
+		if(!add.isPresent())
 			throw new AddressNotFoundException("Address Not Found");
 		else {
-			addRepo.deleteById(addId);
-			return viewAdd.get();
-		}
+		//Address viewAdd = addRepo.findById(addId).get();
+		return add.get();
 	}
-
+	}
 }
