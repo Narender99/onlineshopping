@@ -13,7 +13,7 @@ public interface AddressService {
 	public Address addAddress(Address add);
 	public Address updateAddress(Address add);
 	public Address removeAddress(int addId);
-	public List<Address> viewAllAddress(Integer id);
+	public List<Address> viewAllAddress();
 	public Address viewAddress(int addId);
 	
 }

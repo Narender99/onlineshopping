@@ -203,3 +203,31 @@
 2021-03-24 13:05:34,432 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered addProduct()
 2021-03-24 13:05:34,446 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered viewProductByCategory()
 2021-03-24 13:05:34,494 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered updatedProducts()
+2021-03-24 13:07:53,049 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProductTests using Java 15.0.1 on LAPTOP-ENILR1HV with PID 11904 (started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-03-24 13:07:53,054 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-24 13:07:55,313 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-24 13:07:55,510 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 167 ms. Found 7 JPA repository interfaces.
+2021-03-24 13:07:58,491 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-24 13:07:58,505 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-03-24 13:07:59,002 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-03-24 13:07:59,011 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-24 13:07:59,194 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-24 13:07:59,406 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-24 13:07:59,550 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-24 13:08:00,022 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-03-24 13:08:00,902 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.cg.onlineshopping.entities.User (class must be instantiated by Interceptor)
+2021-03-24 13:08:01,170 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-24 13:08:01,188 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-24 13:08:03,242 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-24 13:08:04,119 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-24 13:08:05,141 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-24 13:08:06,220 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2021-03-24 13:08:06,271 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2021-03-24 13:08:06,579 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2021-03-24 13:08:07,324 INFO org.springframework.boot.StartupInfoLogger [main] Started ProductTests in 15.212 seconds (JVM running for 17.365)
+2021-03-24 13:08:07,490 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered viewProductById()
+2021-03-24 13:08:07,720 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered viewAllProducts()
+2021-03-24 13:08:07,755 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered viewProductById()
+2021-03-24 13:08:07,770 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered addProduct()
+2021-03-24 13:08:07,787 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered viewProductByCategory()
+2021-03-24 13:08:07,801 INFO com.cg.onlineshopping.service.ProductServiceImpl [main] Entered updatedProducts()
