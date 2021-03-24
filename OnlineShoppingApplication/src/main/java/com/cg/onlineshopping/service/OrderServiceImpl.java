@@ -90,9 +90,7 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public List<Order> viewAllOrdersByLocation(String location) {
 		logger.info("Order viewAllOrdersByLocation()");
-		int custId = orderRepo.viewAllCustomersByLocation(location);
-        Customer cust = custRepo.findById(custId).get();
-        List<Order> list = new ArrayList<>(cust.getProducts());
+		List<Order> list = orderRepo.viewAllCustomersByLocation(location);
         if(list.isEmpty())
         	throw new OrderNotFoundException("Order Not Found");
         else
