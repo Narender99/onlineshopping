@@ -28,10 +28,16 @@ public class User {
 	@Column(name = "role")
 	private String role;
 	
-	@JsonIgnore
+	
 	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerUser;
+
+	
+
+	public User() {
+		super();
+	}
 
 
 	public User(int userId, String password, String role, Customer customerUser) {

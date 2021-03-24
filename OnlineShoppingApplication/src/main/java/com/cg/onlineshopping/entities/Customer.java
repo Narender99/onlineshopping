@@ -60,6 +60,26 @@ public class Customer {
 	private Cart cart;
 	
 	
+	
+	public Customer() {
+		super();
+	}
+
+	public Customer(int customerId, String firstName, String lastName, String mobileNumber, String email,
+			String address, Address addressCust, User user, Set<Order> products, Cart cart) {
+		super();
+		this.customerId = customerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobileNumber = mobileNumber;
+		this.email = email;
+		this.address = address;
+		this.addressCust = addressCust;
+		this.user = user;
+		this.products = products;
+		this.cart = cart;
+	}
+
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -145,9 +165,9 @@ public class Customer {
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", mobileNumber=" + mobileNumber + ", email=" + email + ", address=" + address + ", addressCust="
-				+ addressCust + "]";
+				+ addressCust + ", user=" + user + ", products=" + products + ", cart=" + cart + "]";
 	}
-	
+
 	
 	
 }

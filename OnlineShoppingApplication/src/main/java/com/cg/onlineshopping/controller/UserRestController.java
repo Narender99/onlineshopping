@@ -30,7 +30,7 @@ public class UserRestController {
 		return loginService.addUser(user);
 	}
 	
-	@GetMapping("/user")
+	@GetMapping("/user/{userId}")
     public User validateuser(@PathVariable("userId") int userId) {
 		logger.info("User removeUser()");
 		return loginService.validateUser(userId);
