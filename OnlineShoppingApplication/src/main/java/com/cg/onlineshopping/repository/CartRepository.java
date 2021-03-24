@@ -17,5 +17,7 @@ public interface CartRepository extends JpaRepository<Cart, Integer>{
 	public Cart updateProductQuantity(Cart cart, Product p,int quantity);
 	public Cart removeAllProducts(Cart cart);
 	public List<Product> viewAllProducts(Cart cart);*/
+	@Query("select c from Cart c where c.customerCart.customer_id=:customerId")
+	public Cart viewCartByCustomerId(@Param("customerId")int customerId);
 	
 }

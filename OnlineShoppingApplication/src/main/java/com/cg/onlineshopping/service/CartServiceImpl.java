@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.cg.onlineshopping.entities.Cart;
 import com.cg.onlineshopping.entities.Product;
+import com.cg.onlineshopping.exception.CartNotFoundException;
 import com.cg.onlineshopping.repository.CartRepository;
 import com.cg.onlineshopping.repository.ProductRepository;
 
@@ -18,6 +19,8 @@ public class CartServiceImpl implements CartService {
 	CartRepository cartRepo;
 	@Autowired 
 	ProductRepository productRepo;
+	
+	
 	/*@Override
 	public Cart addProductToCart(Cart cart, Product p, int quantity) {
 		p.setQuantity(quantity);
@@ -31,7 +34,30 @@ public class CartServiceImpl implements CartService {
 		return cart;
 		
 	}
-
+	
+	@Override
+	public Cart removeCart(Cart cart)
+	{
+		if(cart == null)
+			throw new CartNotFoundException("Cart Not Found");
+		else {
+			cartRepo.delete(cart);
+			return cart;
+		}
+	}
+	
+	@Override
+	public Cart viewCustomer(int customerId)
+	{
+		Cart cart = cartRepo.viewCartByCustomerId(customerId);
+		if(cart==null)
+			throw new CartNotFoundException("Cart Not Found");
+		else
+			return cart;
+	}
+	
+	}
+/*
 	@Override
 	public Cart removeProductFromCart(Cart cart, Product p) {
 		int id = p.getProductId();
@@ -60,4 +86,4 @@ public class CartServiceImpl implements CartService {
 		
 	}
 
-}
+}*/
