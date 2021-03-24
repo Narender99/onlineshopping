@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @SpringBootTest
-public class ProductTests {
+public class ProductServiceTests {
 
 	@Autowired
 	ProductService productService;

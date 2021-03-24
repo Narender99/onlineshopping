@@ -21,7 +21,7 @@ import com.cg.onlineshopping.repository.CustomerRepository;
 import com.cg.onlineshopping.service.CustomerService;
 
 @SpringBootTest
-public class CustomerTests {
+public class CustomerServiceTests {
 
 	@Autowired
 	CustomerService customerService;
