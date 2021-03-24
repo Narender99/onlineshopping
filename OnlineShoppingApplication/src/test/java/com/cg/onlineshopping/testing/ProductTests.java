@@ -129,16 +129,7 @@ public class ProductTests {
 	   System.out.println("Product Id cannot be retervied");
    
    }
- /*  
-  @Test
-  public void testViewAllProduct() {
-	   List<Product> product = new ArrayList<>();
-	        Mockito.when(productRepository.findAll()).thenReturn(product);
-	        Exception ex = assertThrows(ProductNotFoundException.class, ()-> productService.viewAllProducts());
-	        assertEquals("No Products Found", ex.getMessage());
-	        
-	    }
-	    */
+
 	
   @Test
 	public void testViewProductsByCategory()
@@ -198,6 +189,67 @@ public class ProductTests {
 		Mockito.when(productRepository.viewAllProductsByCategory(product.get(0).getCategory().getCatId())).thenReturn(product);
 		assertThat(productService.viewProductsByCategory(product.get(0).getCategory().getCatId())).isEqualTo(product);
 	}
+  
+  @Test
+	public void testViewAllProducts()
+	{
+		Product product1 = new Product();
+		product1.setProductName("LG TV");
+		product1.setPrice(18000.0);
+		product1.setColor("Red");
+		product1.setDimension("3D");
+		product1.setSpecification("HD");
+		product1.setManufacturer("LG");
+		product1.setQuantity(2);
+		
+		Category cat1 = new Category();
+		cat1.setCatId(1005);
+		cat1.setCategoryName("Electronics");
+		Cart cart1 = new Cart();
+		cart1.setCartId(5002);
+		Customer cust1 = new Customer();
+		cust1.setFirstName("Ayush");
+		cust1.setLastName("Sukla");
+		cust1.setMobileNumber("90385857");
+		cust1.setAddress("Mumbai");
+		cust1.setEmail("ayz@g.com");
+		cart1.setCustomerCart(cust1);
+		
+		product1.setCategory(cat1);
+		product1.setCart(cart1);
+		
+		Product product2 = new Product();
+		product2.setProductName("LG TV");
+		product2.setPrice(18000.0);
+		product2.setColor("Red");
+		product2.setDimension("3D");
+		product2.setSpecification("HD");
+		product2.setManufacturer("LG");
+		product2.setQuantity(2);
+		
+		Category cat2 = new Category();
+		cat2.setCatId(1005);
+		cat2.setCategoryName("Electronics");
+		Cart cart2 = new Cart();
+		cart2.setCartId(5002);
+		Customer cust2 = new Customer();
+		cust2.setFirstName("Ayush");
+		cust2.setLastName("Sukla");
+		cust2.setMobileNumber("90385857");
+		cust2.setAddress("Mumbai");
+		cust2.setEmail("ayz@g.com");
+		cart2.setCustomerCart(cust2);
+		
+		product2.setCategory(cat2);
+		product2.setCart(cart2);
+		
+		List<Product> product = new ArrayList<>();
+		product.add(product1); product.add(product2);
+		Mockito.when(productRepository.findAll()).thenReturn(product);
+		
+		assertThat(productService.viewAllProducts()).isEqualTo(product);
+	}
+  
   
   
   }
