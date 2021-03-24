@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.cg.onlineshopping.entities.Address;
 import com.cg.onlineshopping.exception.AddressNotFoundException;
 import com.cg.onlineshopping.repository.AddressRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 public class AddressServiceImpl implements AddressService {
@@ -16,9 +18,13 @@ public class AddressServiceImpl implements AddressService {
 	@Autowired
 	AddressRepository addRepo;
 	
+	Logger logger = LoggerFactory.getLogger(AddressServiceImpl.class);
+
 	
 	@Override
 	public Address addAddress(Address add) {
+		logger.info("Address addAddress()");
+
 		if(add == null)
 			throw new AddressNotFoundException("Address Not Found");
 		
@@ -31,6 +37,7 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public Address updateAddress(Address add) {
+		logger.info("Address updateAddress()");
 		if(add == null)
 			throw new AddressNotFoundException("Address Not Found");
 		else {
@@ -41,6 +48,7 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public Address removeAddress(int addId) {
+		logger.info("Address removeAddress()");
 		Optional<Address> add = addRepo.findById(addId);
 		if(!add.isPresent())
 			throw new AddressNotFoundException("Address Not Found");
@@ -53,6 +61,8 @@ public class AddressServiceImpl implements AddressService {
 
 	@Override
 	public List<Address> viewAllAddress() {
+		logger.info("Address viewAllAddress()");
+
 		List<Address> list = addRepo.findAll();
 		if(list.isEmpty())
 			throw new AddressNotFoundException("Address Not Found");
@@ -63,6 +73,7 @@ public class AddressServiceImpl implements AddressService {
 	
 	@Override
 	public Address viewAddress(int addId) {
+		logger.info("Address viewAddress()");
 		Optional<Address> add = addRepo.findById(addId);
 		if(!add.isPresent())
 			throw new AddressNotFoundException("Address Not Found");
