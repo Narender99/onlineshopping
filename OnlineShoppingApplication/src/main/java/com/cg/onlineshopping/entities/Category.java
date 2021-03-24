@@ -28,23 +28,23 @@ public class Category {
 	@Column(name = "category_name")
 	private String categoryName;
 	
+	@JsonIgnore
+	 @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
+	 private Set<Product> products = new HashSet<Product>();
+	
+	 
+	  
+        public Category() {
+			super();
+		}
+		
 	public Category(int catId, String categoryName) {
 		super();
 		this.catId = catId;
 		this.categoryName = categoryName;
 	}
 
-	 @JsonIgnore
-	 @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
-	 private Set<Product> products = new HashSet<Product>();
-	  
-	  
-	public Category() {
-		super();
-	}
-	
-
-	
+	 
 
 
 	public int getCatId() {

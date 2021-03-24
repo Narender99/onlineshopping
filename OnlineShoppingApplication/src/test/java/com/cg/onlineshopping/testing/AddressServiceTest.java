@@ -20,7 +20,7 @@ import com.cg.onlineshopping.service.AddressService;
 
 
 @SpringBootTest
-public class OrderServiceTests {
+public class AddressServiceTest {
 
 	@Autowired
 	AddressService addressService;
