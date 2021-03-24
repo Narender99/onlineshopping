@@ -30,8 +30,12 @@ public class CartServiceImpl implements CartService {
 	}*/
 	@Override
 	public Cart addCart(Cart cart) {
-		cartRepo.save(cart);
-		return cart;
+		if(cart == null)
+			throw new CartNotFoundException("Cart Not Found");
+		else {
+			cartRepo.save(cart);
+			return cart;
+		}
 		
 	}
 	
