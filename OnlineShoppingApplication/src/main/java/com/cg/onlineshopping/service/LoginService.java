@@ -8,7 +8,7 @@ public interface LoginService {
 	
 	public User removeUser(int userId);
 	
-	public User validateUser(User user);
+	public User validateUser(int  userId);
 	
 	public User signOut(User user);
 }

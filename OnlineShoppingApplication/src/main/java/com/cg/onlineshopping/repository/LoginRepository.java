@@ -16,4 +16,11 @@ public interface LoginRepository extends JpaRepository<User, Integer>{
 	
 	@Query("select u from User u where u.userId=:userId and u.password=:password")
     public User findValidateUser(@Param("userId")int userId, @Param("password")String password);
+
+
+	@Query("select u.password from User u where u.userId=:userId")
+	public String getPassword(@Param("userId") int userId);
+
+
 }
+
