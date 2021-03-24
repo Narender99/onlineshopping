@@ -2,7 +2,8 @@ package com.cg.onlineshopping.controller;
 
 import java.time.LocalDate;
 import java.util.List;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,8 +27,12 @@ public class OrderRestController {
     @Autowired
     OrderRepository orderRepo;
     
+	Logger logger = LoggerFactory.getLogger(OrderRestController.class);
+
     @PostMapping("/order")
-    public Order addOrder(@RequestBody Order order) {
+    public Order addOrder(@RequestBody Order order) 
+    {
+    	logger.info("Order addOrder()");
     	orderRepo.save(order);
 		return order;
     	
@@ -35,6 +40,7 @@ public class OrderRestController {
     
    @PutMapping("/order")
    public Order updateOrder(@RequestBody Order order) {
+	   logger.info("Order updateOrder()");
 	  orderRepo.save(order);
 	return order;
 	  
@@ -42,12 +48,14 @@ public class OrderRestController {
   
   @GetMapping("/order")
   public List<Order> viewAllOrder(){
+	  logger.info("Order viewAllOrders()");
 	  return orderRepo.findAll();
   }
  /*  
    @GetMapping("/order/{date}")
-   public List<Order> viewAllOrdersByDate(@RequestBody LocalDate date) {
-	   
+   public List<Order> viewOrdersByDate(@RequestBody LocalDate date) {
+	   		logger.info("Order viewAllOrders()");
+
     return orderService.viewAllOrders(date);
 }
    
@@ -55,6 +63,7 @@ public class OrderRestController {
    @GetMapping("/order/{location}")
    public List<Order> viewOrdersByLocation(@RequestBody String location) {
 	   
+	   logger.info("Order viewAllOrdersByLocation()");
 	return orderService.viewAllOrdersByLocation(location);
 	   
    }
@@ -62,6 +71,7 @@ public class OrderRestController {
    
    @DeleteMapping("/order/orderId")
    public Order removeOrder(@RequestBody int orderId) {
+	   logger.info("Order removeOrder()");
 	   return orderService.removeOrder(orderId);
    }
    
