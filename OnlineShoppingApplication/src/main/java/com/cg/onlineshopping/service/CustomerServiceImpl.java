@@ -11,10 +11,10 @@ import com.cg.onlineshopping.entities.Customer;
 import com.cg.onlineshopping.exception.CustomerNotFoundException;
 import com.cg.onlineshopping.repository.CustomerRepository;
 
-import ch.qos.logback.classic.Logger;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 @Service
@@ -23,11 +23,11 @@ public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	CustomerRepository custRepo;
 	
-	//ogger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
+	Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
 	
 	@Override
 	public Customer addCustomer(Customer cust) {
-		//Logger.info("Customer addCustomer()");
+		logger.info("Customer addCustomer()");
 		if(cust == null)
 			throw new CustomerNotFoundException("No CustomerFound");
 		custRepo.save(cust);
@@ -36,6 +36,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public Customer updateCustomer(Customer cust) {
+		logger.info("Customer updateCustomer()");
 		if(cust == null)
 			throw new CustomerNotFoundException("No Customer Found");
 		else {
@@ -46,6 +47,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public Customer removeCustomer(Integer custId) {
+		 logger.info("Customer removeCustomer()");
 		Optional<Customer> cust = custRepo.findById(custId);
 		if(!cust.isPresent())
 			throw new CustomerNotFoundException("No Customer Found");
@@ -57,6 +59,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public Customer viewCustomer(Integer custId) {
+		logger.info("Customer viewCustomerById()");
 		Optional<Customer> cust =  custRepo.findById(custId);
 		if(!cust.isPresent())
 			throw new CustomerNotFoundException("No Customer Found");
@@ -66,6 +69,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public List<Customer> ViewAllCustomers(String location) {
+		logger.info("Customer viewCustomerByLocation()");
 		 List<Customer> cust= custRepo.viewAllCustomer(location);
 	        if(cust.isEmpty())
 	            throw new CustomerNotFoundException("No Customer Found");
@@ -74,7 +78,7 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public List<Customer> viewAllCustomer() {
-
+		logger.info("Customer viewAllCustomer()");
 		 List<Customer> customers= custRepo.findAll();
 	        if(customers.isEmpty())
 	            throw new CustomerNotFoundException("No Customer Found");
