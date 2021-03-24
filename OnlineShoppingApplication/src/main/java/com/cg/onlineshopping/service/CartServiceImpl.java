@@ -3,6 +3,8 @@ package com.cg.onlineshopping.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +22,8 @@ public class CartServiceImpl implements CartService {
 	@Autowired 
 	ProductRepository productRepo;
 	
-	
+	Logger logger = LoggerFactory.getLogger(CartServiceImpl.class);
+
 	/*@Override
 	public Cart addProductToCart(Cart cart, Product p, int quantity) {
 		p.setQuantity(quantity);
@@ -30,6 +33,8 @@ public class CartServiceImpl implements CartService {
 	}*/
 	@Override
 	public Cart addCart(Cart cart) {
+		logger.info("Cart addCart()");
+
 		if(cart == null)
 			throw new CartNotFoundException("Cart Not Found");
 		else {
@@ -42,6 +47,7 @@ public class CartServiceImpl implements CartService {
 	@Override
 	public Cart removeCart(Cart cart)
 	{
+		logger.info("Cart removeCart()");
 		if(cart == null)
 			throw new CartNotFoundException("Cart Not Found");
 		else {
@@ -53,6 +59,7 @@ public class CartServiceImpl implements CartService {
 	@Override
 	public Cart viewCustomer(int customerId)
 	{
+		logger.info("Cart viewCustomer()");
 		Cart cart = cartRepo.viewCartByCustomerId(customerId);
 		if(cart==null)
 			throw new CartNotFoundException("Cart Not Found");

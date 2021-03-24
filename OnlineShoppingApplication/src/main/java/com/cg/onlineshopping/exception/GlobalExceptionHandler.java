@@ -53,4 +53,37 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		ResponseEntity<Object> entity = new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 		return entity;
 	}
+	
+	@ExceptionHandler(CartNotFoundException.class)
+	public ResponseEntity<Object> handleExceptions(CartNotFoundException exception, WebRequest webRequest)
+	{
+		logger.error(exception.getMessage());
+		ExceptionResponse response = new ExceptionResponse();
+		response.setDateTime(LocalDateTime.now());
+		response.setMessage(exception.getMessage());
+		ResponseEntity<Object> entity = new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+		return entity;
+	}
+	
+	@ExceptionHandler(OrderNotFoundException.class)
+	public ResponseEntity<Object> handleExceptions(OrderNotFoundException exception, WebRequest webRequest)
+	{
+		logger.error(exception.getMessage());
+		ExceptionResponse response = new ExceptionResponse();
+		response.setDateTime(LocalDateTime.now());
+		response.setMessage(exception.getMessage());
+		ResponseEntity<Object> entity = new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+		return entity;
+	}
+	@ExceptionHandler(UserNotFoundException.class)
+	public ResponseEntity<Object> handleExceptions(UserNotFoundException exception, WebRequest webRequest)
+	{
+		logger.error(exception.getMessage());
+		ExceptionResponse response = new ExceptionResponse();
+		response.setDateTime(LocalDateTime.now());
+		response.setMessage(exception.getMessage());
+		ResponseEntity<Object> entity = new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+		return entity;
+	}
+	
 }

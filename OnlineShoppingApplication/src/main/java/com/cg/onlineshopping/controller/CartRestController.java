@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.cg.onlineshopping.entities.Cart;
 import com.cg.onlineshopping.entities.Product;
 import com.cg.onlineshopping.service.CartService;
@@ -22,6 +23,9 @@ public class CartRestController {
     
 	@Autowired
     CartService cartService;
+	
+	Logger logger = LoggerFactory.getLogger(CartRestController.class);
+
    
 	@PostMapping("/cart")
 	/*public Cart addProductToCart(@RequestBody Cart cart, @RequestBody Product product, @RequestBody int quantity)
@@ -30,7 +34,22 @@ public class CartRestController {
 	}*/
 	public Cart addCart(@RequestBody Cart cart)
 	{
+		logger.info("Cart addCart()");
 		return cartService.addCart(cart);
+	}
+	
+	@DeleteMapping("/cart")
+	public Cart removeCart(@RequestBody Cart cart)
+	{
+		logger.info("Cart removeCart()");
+		return cartService.removeCart(cart);
+	}
+	
+	@GetMapping("/cart/{customerId}")
+	public Cart viewAllCustomer(@PathVariable("customerId")int customerId)
+	{
+		logger.info("Cart viewCustomer()");
+		return cartService.viewCustomer(customerId);
 	}
 	
 	/*@DeleteMapping("/cart")
@@ -51,17 +70,7 @@ public class CartRestController {
 		return cartService.updateProductQuantity(cart, p, quantity);
 	}*/
 	
-	@DeleteMapping("/cart")
-	public Cart removeCart(@RequestBody Cart cart)
-	{
-		return cartService.removeCart(cart);
-	}
 	
-	@GetMapping("/cart/{customerId}")
-	public Cart viewAllProducts(@PathVariable("customerId")int customerId)
-	{
-		return cartService.viewCustomer(customerId);
-	}
 	
 	/*@GetMapping("/cart/{cartId}")
 	public Cart viewAllCart(@PathVariable("cartId")int cartId)
