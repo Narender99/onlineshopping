@@ -15,25 +15,25 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name = "user_details")
 public class User {
-    
+
 	@Id
 	@Column(name = "user_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="user_seq")
 	@SequenceGenerator(name="user_seq",sequenceName="user_seq", allocationSize=1)
 	private int userId;
-	
+
 	@Column(name = "password")
 	private String password;
-	
+
 	@Column(name = "role")
 	private String role;
-	
-	
+
+
 	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerUser;
 
-	
+
 
 	public User() {
 		super();
@@ -97,7 +97,7 @@ public class User {
 
 
 
-	
-	
-	
+
+
+
 }

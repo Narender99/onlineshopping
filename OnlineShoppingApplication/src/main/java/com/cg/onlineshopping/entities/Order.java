@@ -22,32 +22,32 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name="order_details")
 public class Order {
 
-	
-    @Id
-    @Column(name = "order_id")
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="order_seq")
+
+	@Id
+	@Column(name = "order_id")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="order_seq")
 	@SequenceGenerator(name="order_seq",sequenceName="order_seq", allocationSize=1)
 	private int orderId;
-    @Column(name = "order_status")
+	@Column(name = "order_status")
 	private String orderStatus;
-    @Column(name = "order_date")
+	@Column(name = "order_date")
 	private LocalDate orderDate;
-	
-    @JsonIgnore
+
+	@JsonIgnore
 	@ManyToMany
 	@JoinTable(name = "product_order", joinColumns = { @JoinColumn(name = "order_id") }, inverseJoinColumns = { @JoinColumn(name = "product_id") })
 	Set<Product> products=new TreeSet<>();
-	
-	
+
+
 	@ManyToOne
 	@JoinColumn(name="address_id")
 	private Address addressOrder;
-	
-	
+
+
 	@ManyToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerOrder;
-	
+
 	public Order() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -119,8 +119,8 @@ public class Order {
 	}
 
 
-	
 
 
-	
+
+
 }

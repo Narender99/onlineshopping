@@ -21,42 +21,42 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name = "address_details")
 public class Address {
-    
+
 	@Id 
-	
+
 	@Column(name = "address_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="address_seq")
 	@SequenceGenerator(name="address_seq",sequenceName="address_seq", allocationSize=1)
 	private int addressId;
-	
+
 	@Column(name = "street_no")
 	private String streetNo;
-	
+
 	@Column(name = "building_name")
 	private String buildingName;
-	
+
 	@Column(name = "city")
 	private String  city;
-	
+
 	@Column(name = "state")
 	private String state;
-	
+
 	@Column(name = "country")
 	private String country;	
-	
+
 	@Column(name = "pincode")
 	private String pincode;
-	
+
 	//mapping part
-	 @JsonIgnore
-	 @OneToMany(fetch = FetchType.EAGER, mappedBy = "addressOrder")
-	 private List<Order> order = new ArrayList<Order>();
-	 
-	 
+	@JsonIgnore
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "addressOrder")
+	private List<Order> order = new ArrayList<Order>();
+
+
 	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerAdd;
-     
+
 	public Address() {
 		super();
 	}

@@ -28,22 +28,22 @@ public class Customer {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="customer_seq")
 	@SequenceGenerator(name="customer_seq",sequenceName="customer_seq", allocationSize=1)
 	private int customerId;
-	
+
 	@Column(name = "first_name")
 	private String firstName;
-	
+
 	@Column(name = "last_name")
 	private String lastName;
-	
+
 	@Column(name = "mobile_number")
 	private String mobileNumber;
-	
+
 	@Column(name = "email")
 	private String email;
-	
+
 	@Column(name = "address")
 	private String address;
-	
+
 	//mapping
 	@JsonIgnore
 	@OneToOne(mappedBy="customerAdd")
@@ -52,17 +52,17 @@ public class Customer {
 	@JsonIgnore
 	@OneToOne(mappedBy="customerUser")
 	private User user;
-	
+
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "customerOrder")
-	 private Set<Order> products = new HashSet<Order>();
-	
+	private Set<Order> products = new HashSet<Order>();
+
 	@JsonIgnore
 	@OneToOne(mappedBy="customerCart")
 	private Cart cart;
-	
-	
-	
+
+
+
 	public Customer() {
 		super();
 	}
@@ -138,7 +138,7 @@ public class Customer {
 		this.addressCust = addressCust;
 	}
 
-	
+
 	public User getUser() {
 		return user;
 	}
@@ -170,6 +170,6 @@ public class Customer {
 				+ addressCust + ", user=" + user + ", products=" + products + ", cart=" + cart + "]";
 	}
 
-	
+
 	
 }

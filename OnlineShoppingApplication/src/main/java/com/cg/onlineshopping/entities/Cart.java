@@ -30,20 +30,20 @@ public class Cart {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="cart_seq")
 	@SequenceGenerator(name="cart_seq",sequenceName="cart_seq", allocationSize=1)
 	private int cartId;
-	
+
 	//private Map<Product, Integer>products; // product and quantity 
-	
+
 	//mapping
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "cart")
 	Set<Product> product= new HashSet<>();
-	
-   
+
+
 	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerCart;
 
-	
+
 	public Cart() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -53,7 +53,7 @@ public class Cart {
 	public Cart(int cartId, Set<Product> product, Customer customerCart) {
 		super();
 		this.cartId = cartId;
-		
+
 		this.product = product;
 		this.customerCart = customerCart;
 	}
@@ -69,7 +69,7 @@ public class Cart {
 	}
 
 
-	
+
 
 
 	public Set<Product> getProduct() {

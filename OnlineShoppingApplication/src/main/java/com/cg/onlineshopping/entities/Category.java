@@ -18,33 +18,33 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name = "category_details")
 public class Category {
-    
+
 	@Id
 	@Column(name = "cat_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="category_seq")
 	@SequenceGenerator(name="category_seq",sequenceName="category_seq", allocationSize=1)
 	private int catId;
-	
+
 	@Column(name = "category_name")
 	private String categoryName;
-	
+
 	@JsonIgnore
-	 @OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
-	 private Set<Product> products = new HashSet<Product>();
-	
-	 
-	  
-        public Category() {
-			super();
-		}
-		
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "category")
+	private Set<Product> products = new HashSet<Product>();
+
+
+
+	public Category() {
+		super();
+	}
+
 	public Category(int catId, String categoryName) {
 		super();
 		this.catId = catId;
 		this.categoryName = categoryName;
 	}
 
-	 
+
 
 
 	public int getCatId() {
@@ -63,7 +63,7 @@ public class Category {
 		this.categoryName = categoryName;
 	}
 
-	
+
 	public Set<Product> getProducts() {
 		return products;
 	}
@@ -77,6 +77,6 @@ public class Category {
 		return "Category [catId=" + catId + ", categoryName=" + categoryName + ", products=" + products + "]";
 	}
 
-	
-	
+
+
 }
