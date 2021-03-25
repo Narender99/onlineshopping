@@ -59,7 +59,7 @@ public class CustomerRestController {
 		 logger.info("Customer viewCustomerById()");
         return customerService.viewCustomer(custId);
     }
-	/*
+/*
 	@GetMapping("/customer/{customerAddress}")
     public List<Customer> viewCustomerByAddress(@PathVariable("customerAddress")String custAddress)
     {

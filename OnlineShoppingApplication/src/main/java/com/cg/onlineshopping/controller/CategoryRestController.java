@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.onlineshopping.entities.Category;
+import com.cg.onlineshopping.entities.Order;
 import com.cg.onlineshopping.repository.CategoryRepository;
 
 @RestController
