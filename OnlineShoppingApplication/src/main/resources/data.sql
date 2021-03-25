@@ -64,10 +64,10 @@ create table product_details
      specification varchar2(20) not null,
      manufacturer varchar2(20) not null,
      quantity int not null,
-     cat_id int ,
-     cart_id int,
-     constraint fk_product_details foreign key(cat_id) references category_details(cat_id)
-     constraint fk_product_details2 foreign key(cart_id) references cart_details(cart_id)
+     cat_id int not null,
+     constraint fk_product_details foreign key(cat_id) references category_details(cat_id),
+cart_id int not null,
+     constraint fk_product_details foreign key(cart_id) references cart_details(cart_id)
 
     );
 
@@ -82,9 +82,8 @@ create table cart_details
     (
      cart_id int not null primary key,
      customer_id int not null,
-    
      constraint fk_cart_details foreign key(customer_id) references customer_details(customer_id),
-     constraint fk_cart_details1 foreign key(product_id) references product_details(product_id)
+    
     );
 
 
@@ -97,8 +96,10 @@ create table order_details
       order_date date not null,
       order_status varchar2(20) not null,
       customer_id int not null,
+     
       address_id int not null,
       constraint fk_order_details1 foreign key(customer_id) references customer_details(customer_id),
+     
       constraint fk_order_details2 foreign key(address_id) references address_details(address_id)
      );
      

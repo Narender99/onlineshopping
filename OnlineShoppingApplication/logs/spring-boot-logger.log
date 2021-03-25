@@ -2485,3 +2485,5 @@ java.sql.SQLIntegrityConstraintViolationException: ORA-02292: integrity constrai
 2021-03-25 10:37:56,514 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8085-exec-1] Initializing Servlet 'dispatcherServlet'
 2021-03-25 10:37:56,516 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8085-exec-1] Completed initialization in 1 ms
 2021-03-25 10:37:56,583 WARN org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler [http-nio-8085-exec-1] Request method 'GET' not supported
+2021-03-25 10:38:30,414 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8085-exec-3] Cart viewCustomer()
+2021-03-25 10:38:30,418 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8085-exec-3] Cart viewCustomer()
