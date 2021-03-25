@@ -29,7 +29,7 @@ public class CustomerServiceImpl implements CustomerService {
 	public Customer addCustomer(Customer cust) {
 		logger.info("Customer addCustomer()");
 		if(cust == null)
-			throw new CustomerNotFoundException("No CustomerFound");
+			throw new CustomerNotFoundException("No Customer Found");
 		custRepo.save(cust);
 		return cust;
 	}

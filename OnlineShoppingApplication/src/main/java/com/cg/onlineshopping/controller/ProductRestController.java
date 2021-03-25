@@ -47,22 +47,22 @@ public class ProductRestController {
     	logger.info("Entered updatedProducts");
         return productService.updateProduct(product);
     }
-  /*
+  
     @GetMapping("/product/{productId}")
     public Product viewProductById(@PathVariable("productId") int prodId)
     {
          logger.info("Entered viewProductById");
         return productService.viewProduct(prodId);
     }
- */ 
-   
+ 
+/*
     @GetMapping("/product/{catId}")
     public List<Product> viewProductsByCategory(@PathVariable("catId") int catId)
     {
     	logger.info("Entered viewProductByCategory");
         return productService.viewProductsByCategory(catId);
     }
-  
+  */
     @DeleteMapping("/product/{prodId}")
     public Product removeProduct(@PathVariable("prodId") int prodId)
     {

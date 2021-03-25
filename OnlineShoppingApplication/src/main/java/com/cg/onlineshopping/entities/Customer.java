@@ -30,11 +30,9 @@ public class Customer {
 	private int customerId;
 	
 	@Column(name = "first_name")
-	//@NotNull(message="First Name can not be null")
 	private String firstName;
 	
 	@Column(name = "last_name")
-	//@NotNull(message="Last Name can not be null")
 	private String lastName;
 	
 	@Column(name = "mobile_number")

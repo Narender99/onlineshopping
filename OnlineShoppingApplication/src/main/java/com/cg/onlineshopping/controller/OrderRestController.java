@@ -34,7 +34,7 @@ public class OrderRestController {
     public Order addOrder(@RequestBody Order order) 
     {
     	logger.info("Order addOrder()");
-    	orderRepo.save(order);
+    	orderService.addOrder(order);
 		return order;
     	
     }
@@ -42,7 +42,7 @@ public class OrderRestController {
    @PutMapping("/order")
    public Order updateOrder(@RequestBody Order order) {
 	   logger.info("Order updateOrder()");
-	  orderRepo.save(order);
+	  orderService.updateOrder(order);
 	return order;
 	  
    }

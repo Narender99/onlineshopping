@@ -33,22 +33,26 @@ public class ProductServiceImpl implements ProductService {
 		if(allProducts.isEmpty()) {
 			throw new ProductNotFoundException("No Products Found");
 		}
+		
 		return allProducts;
 	}
 
 	@Override
 	public Product addProduct(Product product) {
 		logger.info("Entered addProduct()");
+		if(product == null)
+			throw new ProductNotFoundException("No Products Found");
+		else {
 		productRepo.save(product);
 	       
         return  product;
 	}
-
+	}
+	
 	@Override
 	public Product updateProduct(Product product) {
 		logger.info("Entered updatedProducts()");
-		int id = product.getProductId();
-		if(id == 0) {
+		if(product == null) {
 			throw new ProductNotFoundException("No Products Found");
 		}else {
 		productRepo.save(product);
@@ -80,12 +84,12 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public Product removeProduct(int productId) {
 		logger.info("removeProduct()");
-		Product product = productRepo.findById(productId).get();
-		if(product == null) {
+		Optional<Product> product = productRepo.findById(productId);
+		if(!product.isPresent()) {
 			throw new ProductNotFoundException("No Products Found");
 		}else {
 		productRepo.deleteById(productId);
-		return product;
+		return product.get();
 	}
 	}
 

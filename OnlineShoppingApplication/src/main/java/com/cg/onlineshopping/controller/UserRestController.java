@@ -37,7 +37,7 @@ public class UserRestController {
 	}
 	
 	@DeleteMapping("/user/{userId}")
-	public User removeUser(@RequestBody int userId) {
+	public User removeUser(@PathVariable("userId") int userId) {
 
 		logger.info("User validateUser()");
 		return loginService.removeUser(userId);

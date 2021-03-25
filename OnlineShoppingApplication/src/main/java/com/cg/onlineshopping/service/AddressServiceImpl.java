@@ -74,12 +74,11 @@ public class AddressServiceImpl implements AddressService {
 	@Override
 	public Address viewAddress(int addId) {
 		logger.info("Address viewAddress()");
-		Optional<Address> add = addRepo.findById(addId);
-		if(!add.isPresent())
+		Optional<Address> viewAdd = addRepo.findById(addId);
+		if(!viewAdd.isPresent())
 			throw new AddressNotFoundException("Address Not Found");
 		else {
-		//Address viewAdd = addRepo.findById(addId).get();
-		return add.get();
+		return viewAdd.get();
 	}
 	}
 }

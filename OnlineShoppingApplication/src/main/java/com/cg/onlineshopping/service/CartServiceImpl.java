@@ -45,9 +45,10 @@ public class CartServiceImpl implements CartService {
 	}
 	
 	@Override
-	public Cart removeCart(Cart cart)
+	public Cart removeCart(int cartId)
 	{
 		logger.info("Cart removeCart()");
+		Cart cart = cartRepo.findById(cartId).get();
 		if(cart == null)
 			throw new CartNotFoundException("Cart Not Found");
 		else {

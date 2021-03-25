@@ -51,7 +51,7 @@ private String manufacturer;
 private int quantity;
 
 
-@JsonIgnore
+
 @ManyToOne
 @JoinColumn(name="cat_id")
 private Category category;
@@ -60,7 +60,7 @@ private Category category;
 @ManyToMany(fetch=FetchType.LAZY,mappedBy="products")
  private List<Order> order = new ArrayList<Order>();
 
-@JsonIgnore
+
 @ManyToOne
 @JoinColumn(name="cart_id")
 private Cart cart;

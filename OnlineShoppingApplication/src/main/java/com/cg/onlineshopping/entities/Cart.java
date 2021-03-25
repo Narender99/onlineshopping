@@ -33,12 +33,12 @@ public class Cart {
 	
 	//private Map<Product, Integer>products; // product and quantity 
 	
-	
+	//mapping
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "cart")
 	Set<Product> product= new HashSet<>();
 	
-    @JsonIgnore
+   
 	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerCart;

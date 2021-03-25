@@ -38,12 +38,12 @@ public class Order {
 	@JoinTable(name = "product_order", joinColumns = { @JoinColumn(name = "order_id") }, inverseJoinColumns = { @JoinColumn(name = "product_id") })
 	Set<Product> products=new TreeSet<>();
 	
-	@JsonIgnore
+	
 	@ManyToOne
 	@JoinColumn(name="address_id")
 	private Address addressOrder;
 	
-	@JsonIgnore
+	
 	@ManyToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerOrder;

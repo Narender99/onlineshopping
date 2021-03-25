@@ -47,17 +47,18 @@ public class Address {
 	@Column(name = "pincode")
 	private String pincode;
 	
+	//mapping part
 	 @JsonIgnore
 	 @OneToMany(fetch = FetchType.EAGER, mappedBy = "addressOrder")
 	 private List<Order> order = new ArrayList<Order>();
 	 
-	 @JsonIgnore
+	 
 	@OneToOne
 	@JoinColumn(name="customer_id")
 	private Customer customerAdd;
      
 	public Address() {
-		
+		super();
 	}
 
 	public Address(int addressId, String streetNo, String buildingName, String city, String state, String country,

@@ -38,11 +38,11 @@ public class CartRestController {
 		return cartService.addCart(cart);
 	}
 	
-	@DeleteMapping("/cart")
-	public Cart removeCart(@RequestBody Cart cart)
+	@DeleteMapping("/cartId{cartId}")
+	public Cart removeCart(@PathVariable("cartId") int cartId)
 	{
 		logger.info("Cart removeCart()");
-		return cartService.removeCart(cart);
+		return cartService.removeCart(cartId);
 	}
 	
 	@GetMapping("/cart/{customerId}")
