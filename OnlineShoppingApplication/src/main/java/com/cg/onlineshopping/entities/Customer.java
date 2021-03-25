@@ -15,9 +15,11 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sun.istack.NotNull;
+
 
 @Entity
 @Table(name = "customer_details")
@@ -25,23 +27,28 @@ public class Customer {
 
 	@Id
 	@Column(name = "customer_id")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="customer_seq")
-	@SequenceGenerator(name="customer_seq",sequenceName="customer_seq", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="customer_seq")
+	@SequenceGenerator(name = "customer_seq",sequenceName = "customer_seq", allocationSize=1)
 	private int customerId;
 
 	@Column(name = "first_name")
+	@NotNull(message= "First Name can not be null")
 	private String firstName;
 
 	@Column(name = "last_name")
+	@NotNull(message = "Last Name should not be null")
 	private String lastName;
 
 	@Column(name = "mobile_number")
+	@Size(min = 10, message="Mobile no should be in 10 digits")
 	private String mobileNumber;
 
 	@Column(name = "email")
+	@NotNull(message = "Email should be valid")
 	private String email;
 
 	@Column(name = "address")
+	@NotNull(message = "address cannot be empty")
 	private String address;
 
 	//mapping
