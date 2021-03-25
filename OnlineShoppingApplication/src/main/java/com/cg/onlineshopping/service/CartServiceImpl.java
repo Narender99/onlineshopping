@@ -21,7 +21,7 @@ public class CartServiceImpl implements CartService {
 	CartRepository cartRepo;
 	@Autowired 
 	ProductRepository productRepo;
-	
+
 	Logger logger = LoggerFactory.getLogger(CartServiceImpl.class);
 
 	/*@Override
@@ -41,9 +41,9 @@ public class CartServiceImpl implements CartService {
 			cartRepo.save(cart);
 			return cart;
 		}
-		
+
 	}
-	
+
 	@Override
 	public Cart removeCart(int cartId)
 	{
@@ -56,19 +56,19 @@ public class CartServiceImpl implements CartService {
 			return cart;
 		}
 	}
-	
+
 	@Override
 	public Cart viewCustomer(int customerId)
 	{
 		logger.info("Cart viewCustomer()");
 		Cart cart = cartRepo.viewCartByCustomerId(customerId);
-		if(cart==null)
+		if(cart == null)
 			throw new CartNotFoundException("Cart Not Found");
 		else
 			return cart;
 	}
-	
-	}
+
+}
 /*
 	@Override
 	public Cart removeProductFromCart(Cart cart, Product p) {
@@ -95,7 +95,7 @@ public class CartServiceImpl implements CartService {
 	public List<Product> viewAllProducts(Cart cart) {
 		List<Product> list = new ArrayList<>(cart.getProduct());
 		return list;
-		
+
 	}
 
 }*/

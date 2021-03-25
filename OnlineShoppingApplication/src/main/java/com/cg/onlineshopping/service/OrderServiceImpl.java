@@ -22,20 +22,20 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	OrderRepository orderRepo;
-	
+
 	@Autowired
 	private LoginRepository loginRepo;
-	
+
 	@Autowired
 	private CustomerRepository custRepo;
-	
-	
+
+
 	Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
-	
+
 	@Override
 	public Order addOrder(Order order) {
 		logger.info("Order addOrder()");
-		if(order==null)
+		if(order == null)
 			throw new OrderNotFoundException("Order Not Found");
 		else {
 			orderRepo.save(order);
@@ -46,7 +46,7 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public Order updateOrder(Order order) {
 		logger.info("Order updateOrder()");
-		if(order==null)
+		if(order == null)
 			throw new OrderNotFoundException("Order Not Found");
 		else {
 			orderRepo.save(order);
@@ -77,38 +77,38 @@ public class OrderServiceImpl implements OrderService {
 			return orders.get();
 		}
 	}
-	
+
 	@Override
 	public List<Order> viewAllOrders(LocalDate date) {
 		logger.info("Order viewAllOrders()");
-		List<Order> orders= orderRepo.viewAllOrderByDate(date);
+		List<Order> orders = orderRepo.viewAllOrderByDate(date);
 		if(orders.isEmpty())
 			throw new OrderNotFoundException("Order Not Found");
 		else
 			return orders;
 	}
-	
+
 	@Override
 	public List<Order> viewAllOrdersByLocation(String location) {
 		logger.info("Order viewAllOrdersByLocation()");
 		List<Order> list = orderRepo.viewAllCustomersByLocation(location);
-        if(list.isEmpty())
-        	throw new OrderNotFoundException("Order Not Found");
-        else
-        	return list;
-    
+		if(list.isEmpty())
+			throw new OrderNotFoundException("Order Not Found");
+		else
+			return list;
+
 	}
 
 	@Override
 	public Order viewAllOrderById(int id) {
 		logger.info("Order viewAllOrderByUserId()");;
-        Optional<Order> list = orderRepo.findById(id);
-        
-        if(!list.isPresent())
-        	throw new OrderNotFoundException("Order Not Found");
-        else
-        	return list.get();
+		Optional<Order> list = orderRepo.findById(id);
+
+		if(!list.isPresent())
+			throw new OrderNotFoundException("Order Not Found");
+		else
+			return list.get();
 	}
 
-	
+
 }

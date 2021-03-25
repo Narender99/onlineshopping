@@ -18,28 +18,34 @@ import com.cg.onlineshopping.service.LoginService;
 @RequestMapping("/onlineshopping/api")
 public class UserRestController {
 
-	
+
 	@Autowired
 	LoginService loginService;
-	
+
 	Logger logger = LoggerFactory.getLogger(UserRestController.class);
 
 	@PostMapping("/user")
 	public User adduser(@RequestBody User user) {
+		
 		logger.info("User addUser()");
+		
 		return loginService.addUser(user);
 	}
-	
+
 	@GetMapping("/user/{userId}")
-    public User validateuser(@PathVariable("userId") int userId) {
+	public User validateuser(@PathVariable("userId") int userId) {
+		
 		logger.info("User removeUser()");
+		
 		return loginService.validateUser(userId);
 	}
-	
+
 	@DeleteMapping("/user/{userId}")
 	public User removeUser(@PathVariable("userId") int userId) {
+		
 
 		logger.info("User validateUser()");
+		
 		return loginService.removeUser(userId);
 	}
 }

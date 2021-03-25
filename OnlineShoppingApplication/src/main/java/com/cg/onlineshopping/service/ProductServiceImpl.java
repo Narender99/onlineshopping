@@ -20,12 +20,12 @@ import org.slf4j.LoggerFactory;
 public class ProductServiceImpl implements ProductService {
 
 	Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
-	
+
 	@Autowired
 	ProductRepository productRepo;
 	@Autowired
 	CategoryRepository categoryRepo;
-	
+
 	@Override
 	public List<Product> viewAllProducts() {
 		logger.info("Entered viewAllProducts()");
@@ -33,7 +33,7 @@ public class ProductServiceImpl implements ProductService {
 		if(allProducts.isEmpty()) {
 			throw new ProductNotFoundException("No Products Found");
 		}
-		
+
 		return allProducts;
 	}
 
@@ -43,21 +43,21 @@ public class ProductServiceImpl implements ProductService {
 		if(product == null)
 			throw new ProductNotFoundException("No Products Found");
 		else {
-		productRepo.save(product);
-	       
-        return  product;
+			productRepo.save(product);
+
+			return  product;
+		}
 	}
-	}
-	
+
 	@Override
 	public Product updateProduct(Product product) {
 		logger.info("Entered updatedProducts()");
 		if(product == null) {
 			throw new ProductNotFoundException("No Products Found");
 		}else {
-		productRepo.save(product);
-		return product;
-	}
+			productRepo.save(product);
+			return product;
+		}
 	}
 
 	@Override
@@ -73,12 +73,12 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<Product> viewProductsByCategory(int catId) {
 		logger.info("Entered viewProductByCategory()");
-        List<Product> list = productRepo.viewAllProductsByCategory(catId);
-        if(list.isEmpty()) 
+		List<Product> list = productRepo.viewAllProductsByCategory(catId);
+		if(list.isEmpty()) 
 			throw new ProductNotFoundException("No Products Found");
-        else
-           return list;		
-		
+		else
+			return list;		
+
 	}
 
 	@Override
@@ -87,10 +87,11 @@ public class ProductServiceImpl implements ProductService {
 		Optional<Product> product = productRepo.findById(productId);
 		if(!product.isPresent()) {
 			throw new ProductNotFoundException("No Products Found");
-		}else {
-		productRepo.deleteById(productId);
-		return product.get();
-	}
+		}
+		else {
+			productRepo.deleteById(productId);
+			return product.get();
+		}
 	}
 
 }

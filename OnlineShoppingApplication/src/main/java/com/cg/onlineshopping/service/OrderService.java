@@ -22,6 +22,6 @@ public interface OrderService {
 	
 	public List<Order> viewAllOrdersByLocation(String location);
 	
-	public Order viewAllOrderById(int userid);
+	public Order viewAllOrderById(int id);
 
 }

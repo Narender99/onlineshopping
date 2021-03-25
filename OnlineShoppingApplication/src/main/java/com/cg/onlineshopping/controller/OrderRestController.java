@@ -22,58 +22,58 @@ import com.cg.onlineshopping.service.OrderService;
 @RequestMapping("/onlineshopping/api")
 public class OrderRestController {
 
-	
+
 	@Autowired
-    OrderService orderService;
-    @Autowired
-    OrderRepository orderRepo;
-    
+	OrderService orderService;
+	@Autowired
+	OrderRepository orderRepo;
+
 	Logger logger = LoggerFactory.getLogger(OrderRestController.class);
 
-    @PostMapping("/order")
-    public Order addOrder(@RequestBody Order order) 
-    {
-    	logger.info("Order addOrder()");
-    	orderService.addOrder(order);
+	@PostMapping("/order")
+	public Order addOrder(@RequestBody Order order) 
+	{
+		logger.info("Order addOrder()");
+		orderService.addOrder(order);
 		return order;
-    	
-    }
-    
-   @PutMapping("/order")
-   public Order updateOrder(@RequestBody Order order) {
-	   logger.info("Order updateOrder()");
-	  orderService.updateOrder(order);
-	return order;
-	  
-   }
-  
-  @GetMapping("/order")
-  public List<Order> viewAllOrder(){
-	  logger.info("Order viewAllOrders()");
-	  return orderRepo.findAll();
-  }
- /*  
+
+	}
+
+	@PutMapping("/order")
+	public Order updateOrder(@RequestBody Order order) {
+		logger.info("Order updateOrder()");
+		orderService.updateOrder(order);
+		return order;
+
+	}
+
+	@GetMapping("/order")
+	public List<Order> viewAllOrder(){
+		logger.info("Order viewAllOrders()");
+		return orderRepo.findAll();
+	}
+	/*  
    @GetMapping("/order/{date}")
    public List<Order> viewOrdersByDate(@RequestBody LocalDate date) {
 	   		logger.info("Order viewAllOrders()");
 
     return orderService.viewAllOrders(date);
 }
-   
-   
+
+
    @GetMapping("/order/{location}")
    public List<Order> viewOrdersByLocation(@RequestBody String location) {
-	   
+
 	   logger.info("Order viewAllOrdersByLocation()");
 	return orderService.viewAllOrdersByLocation(location);
-	   
+
    }
- */  
-   
-   @DeleteMapping("/order/orderId")
-   public Order removeOrder(@PathVariable("orderId") int orderId) {
-	   logger.info("Order removeOrder()");
-	   return orderService.removeOrder(orderId);
-   }
-   
+	 */  
+
+	@DeleteMapping("/order/orderId")
+	public Order removeOrder(@PathVariable("orderId") int orderId) {
+		logger.info("Order removeOrder()");
+		return orderService.removeOrder(orderId);
+	}
+
 }

@@ -17,22 +17,22 @@ public class AddressServiceImpl implements AddressService {
 
 	@Autowired
 	AddressRepository addRepo;
-	
+
 	Logger logger = LoggerFactory.getLogger(AddressServiceImpl.class);
 
-	
+
 	@Override
 	public Address addAddress(Address add) {
 		logger.info("Address addAddress()");
 
 		if(add == null)
 			throw new AddressNotFoundException("Address Not Found");
-		
+
 		else{
 			addRepo.save(add);
-	
-		return add;
-	}
+
+			return add;
+		}
 	}
 
 	@Override
@@ -41,9 +41,9 @@ public class AddressServiceImpl implements AddressService {
 		if(add == null)
 			throw new AddressNotFoundException("Address Not Found");
 		else {
-		   addRepo.save(add);
-		return add;
-	}
+			addRepo.save(add);
+			return add;
+		}
 	}
 
 	@Override
@@ -53,11 +53,11 @@ public class AddressServiceImpl implements AddressService {
 		if(!add.isPresent())
 			throw new AddressNotFoundException("Address Not Found");
 		else {
-		addRepo.deleteById(addId);
-		return add.get();
+			addRepo.deleteById(addId);
+			return add.get();
+		}
 	}
-	}
-	
+
 
 	@Override
 	public List<Address> viewAllAddress() {
@@ -70,7 +70,7 @@ public class AddressServiceImpl implements AddressService {
 			return list;
 	}
 
-	
+
 	@Override
 	public Address viewAddress(int addId) {
 		logger.info("Address viewAddress()");
@@ -78,7 +78,7 @@ public class AddressServiceImpl implements AddressService {
 		if(!viewAdd.isPresent())
 			throw new AddressNotFoundException("Address Not Found");
 		else {
-		return viewAdd.get();
-	}
+			return viewAdd.get();
+		}
 	}
 }

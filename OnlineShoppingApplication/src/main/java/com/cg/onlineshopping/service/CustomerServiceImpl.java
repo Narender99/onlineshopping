@@ -22,9 +22,9 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired
 	CustomerRepository custRepo;
-	
+
 	Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
-	
+
 	@Override
 	public Customer addCustomer(Customer cust) {
 		logger.info("Customer addCustomer()");
@@ -40,20 +40,20 @@ public class CustomerServiceImpl implements CustomerService {
 		if(cust == null)
 			throw new CustomerNotFoundException("No Customer Found");
 		else {
-		custRepo.save(cust);
-		return cust;
-	}
+			custRepo.save(cust);
+			return cust;
+		}
 	}
 
 	@Override
 	public Customer removeCustomer(Integer custId) {
-		 logger.info("Customer removeCustomer()");
+		logger.info("Customer removeCustomer()");
 		Optional<Customer> cust = custRepo.findById(custId);
 		if(!cust.isPresent())
 			throw new CustomerNotFoundException("No Customer Found");
 		else {
-		custRepo.deleteById(custId);
-		return cust.get();
+			custRepo.deleteById(custId);
+			return cust.get();
 		}
 	}
 
@@ -70,19 +70,19 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public List<Customer> ViewAllCustomers(String location) {
 		logger.info("Customer viewCustomerByLocation()");
-		 List<Customer> cust= custRepo.viewAllCustomer(location);
-	        if(cust.isEmpty())
-	            throw new CustomerNotFoundException("No Customer Found");
-	        return cust;
+		List<Customer> cust = custRepo.viewAllCustomer(location);
+		if(cust.isEmpty())
+			throw new CustomerNotFoundException("No Customer Found");
+		return cust;
 	}
 
 	@Override
 	public List<Customer> viewAllCustomer() {
 		logger.info("Customer viewAllCustomer()");
-		 List<Customer> customers= custRepo.findAll();
-	        if(customers.isEmpty())
-	            throw new CustomerNotFoundException("No Customer Found");
-	        return customers;
+		List<Customer> customers = custRepo.findAll();
+		if(customers.isEmpty())
+			throw new CustomerNotFoundException("No Customer Found");
+		return customers;
 	}
 
 }

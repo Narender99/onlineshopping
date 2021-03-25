@@ -19,40 +19,40 @@ import com.cg.onlineshopping.repository.CategoryRepository;
 @RestController
 @RequestMapping("/onlineshopping/api")
 public class CategoryRestController {
-     
+
 	@Autowired
 	CategoryRepository categoryRepository;
-	
+
 	@PostMapping("/category")
 	public Category addCat(@RequestBody Category catAdd) {
-		
+
 		categoryRepository.save(catAdd);
-		
+
 		return catAdd;
-		
+
 	}
-	
+
 	@PutMapping("/category")
 	public Category updateCat(@RequestBody Category cat) {
 		//Category cat = categoryRepository.findById(catId).get();
 		categoryRepository.save(cat);
 		return cat;
-		
+
 	}
-	
+
 	@DeleteMapping("/category/{catId}")
 	public Category removeCat( @PathVariable("catId") int catId) {
 		Category cat = categoryRepository.findById(catId).get();
 		categoryRepository.deleteById(catId);
 		return cat;
-		
+
 	}
-	
+
 	@GetMapping("/category")
 	public List<Category> findCat(){
 		return categoryRepository.findAll();
 	}
-	
-	
-	
+
+
+
 }

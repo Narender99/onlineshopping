@@ -11,9 +11,13 @@ import com.cg.onlineshopping.entities.Address;
 public interface AddressService {
 
 	public Address addAddress(Address add);
+	
 	public Address updateAddress(Address add);
+	
 	public Address removeAddress(int addId);
+	
 	public List<Address> viewAllAddress();
+	
 	public Address viewAddress(int addId);
 	
 }
