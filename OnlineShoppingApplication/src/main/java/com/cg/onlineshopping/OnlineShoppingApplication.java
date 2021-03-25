@@ -19,14 +19,15 @@ public class OnlineShoppingApplication {
 		SpringApplication.run(OnlineShoppingApplication.class, args);
 		System.out.println("started 8085");
 	}
-		@Bean
-		public Docket productApi() {
-			return new Docket(DocumentationType.SWAGGER_2)
-					.select()
-					.apis(RequestHandlerSelectors
-				    .basePackage("com.cg"))
-					.build();
-		}
 	
+	@Bean
+	public Docket productApi() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.select()
+				.apis(RequestHandlerSelectors
+						.basePackage("com.cg"))
+				.build();
+	}
+
 
 }

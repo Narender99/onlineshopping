@@ -15,6 +15,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -44,11 +46,11 @@ public class Customer {
 	private String mobileNumber;
 
 	@Column(name = "email")
-	@NotNull(message = "Email should be valid")
+	@Email(message = "Email should be valid")
 	private String email;
 
 	@Column(name = "address")
-	@NotNull(message = "address cannot be empty")
+	@NotEmpty(message = "address cannot be empty")
 	private String address;
 
 	//mapping

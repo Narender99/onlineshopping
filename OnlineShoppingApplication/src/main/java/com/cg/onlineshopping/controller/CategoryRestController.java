@@ -32,9 +32,9 @@ public class CategoryRestController {
 		
 	}
 	
-	@PutMapping("/category/{catId}")
-	public Category updateCat(@RequestBody int catId) {
-		Category cat = categoryRepository.findById(catId).get();
+	@PutMapping("/category")
+	public Category updateCat(@RequestBody Category cat) {
+		//Category cat = categoryRepository.findById(catId).get();
 		categoryRepository.save(cat);
 		return cat;
 		

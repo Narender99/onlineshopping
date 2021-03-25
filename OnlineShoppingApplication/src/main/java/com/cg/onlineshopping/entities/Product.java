@@ -53,7 +53,7 @@ public class Product {
 
 
 	@ManyToOne
-	@JoinColumn(name="cat_id")
+	@JoinColumn(name = "cat_id")
 	private Category category;
 
 	@JsonIgnore
@@ -70,21 +70,6 @@ public class Product {
 	public Product() {
 		super();
 	}
-
-	/*public Product(int productId, String productName, double price, String color, String dimension, String specification,
-		String manufacturer, int quantity, Category category) {
-	super();
-	this.productId = productId;
-	this.productName = productName;
-	this.price = price;
-	this.color = color;
-	this.dimension = dimension;
-	this.specification = specification;
-	this.manufacturer = manufacturer;
-	this.quantity = quantity;
-	this.category = category;
-}*/
-
 
 	public Product(int productId, String productName, double price, String color, String dimension, String specification,
 			String manufacturer, int quantity, Category category, List<Order> order, Cart cart) {
