@@ -24,16 +24,16 @@ public class CategoryRestController {
 	CategoryRepository categoryRepository;
 
 	@PostMapping("/category")
-	public Category addCat(@RequestBody Category catAdd) {
+	public Category addCategory(@RequestBody Category cat) {
 
-		categoryRepository.save(catAdd);
+		categoryRepository.save(cat);
 
-		return catAdd;
+		return cat;
 
 	}
 
 	@PutMapping("/category")
-	public Category updateCat(@RequestBody Category cat) {
+	public Category updateCategory(@RequestBody Category cat) {
 		//Category cat = categoryRepository.findById(catId).get();
 		categoryRepository.save(cat);
 		return cat;
@@ -41,7 +41,7 @@ public class CategoryRestController {
 	}
 
 	@DeleteMapping("/category/{catId}")
-	public Category removeCat( @PathVariable("catId") int catId) {
+	public Category removeCatgory( @PathVariable("catId") int catId) {
 		Category cat = categoryRepository.findById(catId).get();
 		categoryRepository.deleteById(catId);
 		return cat;

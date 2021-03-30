@@ -36,6 +36,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		
 	}
+	
 	@ExceptionHandler(CustomerNotFoundException.class)
 	public ResponseEntity<Object> handleExceptions( CustomerNotFoundException exception, WebRequest webRequest) {
 		logger.error(exception.getMessage());

@@ -32,7 +32,7 @@ public class CustomerRestController {
 	Logger logger = LoggerFactory.getLogger(CustomerRestController.class);
 
 	@PostMapping("/customer")
-	public Customer addCustomer(@Valid@RequestBody Customer cust){
+	public Customer addCustomer(@Valid @RequestBody Customer cust){
 		logger.info("Customer addCustomer()");
 		Customer customers = customerService.addCustomer(cust);
 		return customers;
@@ -47,10 +47,10 @@ public class CustomerRestController {
 	}
 
 	@PutMapping("/customer")
-	public Customer updateCustomer(@Valid@RequestBody Customer cust) {
+	public Customer updateCustomer(@Valid @RequestBody Customer cust) {
 		logger.info("Customer updateCustomer()");
 		Customer customers = customerService.updateCustomer(cust);
-		return cust;
+		return customers;
 
 	}
 

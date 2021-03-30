@@ -11,6 +11,7 @@ import com.cg.onlineshopping.entities.Address;
 
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Integer>{
+	
 	/*public Address AddAddress(Address add);
 	public Address updateAddress(Address add);
 	public Address removeAddress(Address add);

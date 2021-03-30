@@ -38,7 +38,7 @@ public class AddressRestController {
 		public List<Address> viewAllAddress(@PathVariable("addId")int addId)
 		{
 			logger.info("Address viewAllAddress()");
-			return addService.viewAllAddress(addId);
+			return addressService.viewAllAddress(addId);
 		}*/
 
 	@GetMapping("/address/{addId}")

@@ -15,6 +15,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -29,6 +30,7 @@ public class Order {
 	@SequenceGenerator(name="order_seq",sequenceName="order_seq", allocationSize=1)
 	private int orderId;
 	@Column(name = "order_status")
+	@NotNull(message="Order status should not null")
 	private String orderStatus;
 	@Column(name = "order_date")
 	private LocalDate orderDate;
