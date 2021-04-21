@@ -1,0 +1,1097 @@
+2021-04-18 10:29:46,770 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 10:29:46,789 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 17704 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 10:29:46,790 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 10:29:48,510 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 10:29:48,702 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 173 ms. Found 7 JPA repository interfaces.
+2021-04-18 10:29:49,442 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4acb7ecc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 10:29:49,449 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 10:29:50,465 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 10:29:50,504 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 10:29:50,505 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 10:29:50,506 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 10:29:50,818 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 10:29:50,819 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3940 ms
+2021-04-18 10:29:51,681 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 10:29:51,698 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 10:29:53,440 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 10:29:53,474 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 10:29:53,999 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 10:29:54,442 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 10:29:55,082 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 10:29:55,518 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 10:29:58,165 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 10:29:58,190 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 10:29:58,300 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 10:30:00,789 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: afeeed3a-ef52-4573-8b06-fb0c029a8504
+
+2021-04-18 10:30:02,225 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64acf8d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@63ccb1b2, org.springframework.security.web.header.HeaderWriterFilter@1640a6b5, org.springframework.web.filter.CorsFilter@112a50a1, org.springframework.security.web.authentication.logout.LogoutFilter@17c72ffa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b868ef0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6018d82c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6258f9d1, org.springframework.security.web.session.SessionManagementFilter@740fccd2, org.springframework.security.web.access.ExceptionTranslationFilter@1ee52741]
+2021-04-18 10:30:02,606 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 10:30:02,937 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 10:30:03,192 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 10:30:03,206 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 17.066 seconds (JVM running for 17.749)
+2021-04-18 10:30:37,326 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 10:30:37,326 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 10:30:37,328 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 1 ms
+2021-04-18 10:30:37,491 INFO com.cg.onlineshopping.controller.CustomerRestController [http-nio-8086-exec-1] Customer viewCustomerById()
+2021-04-18 10:30:37,492 INFO com.cg.onlineshopping.service.CustomerServiceImpl [http-nio-8086-exec-1] Customer viewCustomerById()
+2021-04-18 10:30:39,319 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-2] Entered viewAllProducts
+2021-04-18 10:30:39,320 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-2] Entered viewAllProducts()
+2021-04-18 10:31:37,764 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:31:37,765 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:31:38,034 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart addCart()
+2021-04-18 10:31:38,034 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart addCart()
+2021-04-18 10:32:09,125 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 10:32:09,126 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 10:32:20,071 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart removeCart()
+2021-04-18 10:32:20,071 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart removeCart()
+2021-04-18 10:34:11,488 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:34:11,489 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:41:54,105 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:41:54,106 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:44:14,845 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:44:14,846 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:44:24,985 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 10:44:24,987 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 10:44:56,158 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 10:44:56,160 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 10:46:52,457 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:46:52,457 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:47:31,771 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:47:31,772 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:47:41,740 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:47:41,744 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:49:00,202 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart removeCart()
+2021-04-18 10:49:00,203 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart removeCart()
+2021-04-18 10:49:01,495 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart removeCart()
+2021-04-18 10:49:01,496 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart removeCart()
+2021-04-18 10:49:06,634 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 10:49:06,635 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 10:49:06,653 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-10] Cart Not Found
+2021-04-18 10:49:17,235 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-1] Entered viewAllProducts
+2021-04-18 10:49:17,236 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-1] Entered viewAllProducts()
+2021-04-18 10:49:21,369 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart addCart()
+2021-04-18 10:49:21,370 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart addCart()
+2021-04-18 10:49:21,387 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 10:49:21,390 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 10:49:57,496 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart removeCart()
+2021-04-18 10:49:57,496 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart removeCart()
+2021-04-18 10:50:35,736 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 10:50:35,737 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 10:50:35,743 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-6] Cart Not Found
+2021-04-18 10:50:40,110 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:50:40,111 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:50:40,116 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-4] Cart Not Found
+2021-04-18 10:50:44,733 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-7] Entered viewAllProducts
+2021-04-18 10:50:44,734 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-7] Entered viewAllProducts()
+2021-04-18 10:50:48,890 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart addCart()
+2021-04-18 10:50:48,891 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart addCart()
+2021-04-18 10:50:48,911 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 10:50:48,912 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 10:52:06,640 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 10:52:06,641 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 10:52:53,254 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:52:53,255 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:53:28,903 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 10:53:28,904 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 10:53:59,605 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:53:59,606 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:55:11,765 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:55:11,766 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 10:56:28,308 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 10:56:28,309 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 10:56:46,078 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 10:56:46,080 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 10:57:19,862 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 10:57:19,863 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 10:57:23,588 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 10:57:23,589 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 10:58:15,634 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:58:15,635 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 10:59:05,816 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 10:59:05,818 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 10:59:57,691 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 10:59:57,692 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 11:00:19,193 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:00:19,194 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:00:44,861 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 11:00:44,862 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 11:00:54,584 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 11:00:54,585 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 11:01:50,003 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 11:01:50,005 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 11:02:05,966 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:02:05,967 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:02:48,433 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 11:02:48,434 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 11:03:05,735 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:03:05,737 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:03:14,255 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 11:03:14,256 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 11:05:07,606 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 11:05:07,607 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 11:05:32,747 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:05:32,749 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:07:19,480 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-7] Entered viewAllProducts
+2021-04-18 11:07:19,482 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-7] Entered viewAllProducts()
+2021-04-18 11:07:22,995 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart addCart()
+2021-04-18 11:07:22,996 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart addCart()
+2021-04-18 11:07:23,014 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:07:23,015 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:10:10,570 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:10:10,571 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:12:18,676 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 11:12:18,677 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 11:13:29,520 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:13:29,521 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:14:20,381 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 11:14:20,382 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 11:18:12,175 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 11:18:12,176 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-8] Cart viewCustomer()
+2021-04-18 11:18:44,458 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:18:44,468 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:19:13,481 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 11:19:13,482 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 11:19:15,221 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:19:15,222 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:20:27,017 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 11:20:27,018 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 11:34:07,264 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 11:34:07,278 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 10788 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 11:34:07,279 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 11:34:08,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 11:34:08,532 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 128 ms. Found 7 JPA repository interfaces.
+2021-04-18 11:34:09,043 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6edf29c1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 11:34:09,049 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 11:34:09,716 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 11:34:09,734 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 11:34:09,735 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 11:34:09,736 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 11:34:09,943 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 11:34:09,944 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2588 ms
+2021-04-18 11:34:10,382 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 11:34:10,391 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 11:34:10,739 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 11:34:10,745 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 11:34:10,824 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 11:34:10,925 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 11:34:11,260 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 11:34:11,441 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 11:34:11,824 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: com.cg.onlineshopping.entities.Order.addressOrder in com.cg.onlineshopping.entities.Address.order
+2021-04-18 11:34:11,825 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cg.onlineshopping.entities.Order.addressOrder in com.cg.onlineshopping.entities.Address.order
+2021-04-18 11:34:11,826 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-04-18 11:34:11,843 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-04-18 11:34:11,853 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2021-04-18 11:34:11,908 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-18 11:34:12,009 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cg.onlineshopping.entities.Order.addressOrder in com.cg.onlineshopping.entities.Address.order
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at com.cg.onlineshopping.OnlineShoppingApplication.main(OnlineShoppingApplication.java:19)
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.cg.onlineshopping.entities.Order.addressOrder in com.cg.onlineshopping.entities.Address.order
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:848)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1693)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1661)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+2021-04-18 11:37:27,433 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 11:37:27,445 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 13072 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 11:37:27,446 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 11:37:29,206 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 11:37:29,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 173 ms. Found 7 JPA repository interfaces.
+2021-04-18 11:37:29,958 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1a22e0ef' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 11:37:29,965 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 11:37:30,583 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 11:37:30,606 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 11:37:30,607 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 11:37:30,607 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 11:37:30,873 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 11:37:30,874 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3349 ms
+2021-04-18 11:37:31,327 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 11:37:31,335 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 11:37:31,687 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 11:37:31,695 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 11:37:31,792 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 11:37:31,916 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 11:37:32,192 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 11:37:32,462 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 11:37:34,110 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 11:37:34,121 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 11:37:34,211 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 11:37:35,214 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: e8c6887c-ee81-4154-aefb-07841afad9d0
+
+2021-04-18 11:37:35,936 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e4d8cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@1640a6b5, org.springframework.security.web.header.HeaderWriterFilter@1fb00a6d, org.springframework.web.filter.CorsFilter@4b37d1a4, org.springframework.security.web.authentication.logout.LogoutFilter@41e76252, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47fce2c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@abe7d36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34114276, org.springframework.security.web.session.SessionManagementFilter@1ee52741, org.springframework.security.web.access.ExceptionTranslationFilter@2643ed03]
+2021-04-18 11:37:36,138 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 11:37:36,527 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 11:37:36,648 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 11:37:36,668 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 9.832 seconds (JVM running for 10.455)
+2021-04-18 11:43:41,636 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 11:43:41,637 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 11:43:41,642 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 4 ms
+2021-04-18 11:43:41,721 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:43:41,721 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 11:44:05,566 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 11:44:05,567 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 11:44:51,921 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 11:44:51,922 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 11:45:54,551 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 11:45:54,552 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 11:46:48,648 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:46:48,650 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 11:46:59,003 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 11:46:59,003 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 11:48:54,743 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:48:54,744 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart viewCustomer()
+2021-04-18 11:57:47,182 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 11:57:47,207 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 13164 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 11:57:47,209 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 11:57:48,878 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 11:57:49,014 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 125 ms. Found 7 JPA repository interfaces.
+2021-04-18 11:57:49,560 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2e645fbd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 11:57:49,566 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 11:57:50,093 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 11:57:50,107 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 11:57:50,108 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 11:57:50,108 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 11:57:50,304 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 11:57:50,305 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2993 ms
+2021-04-18 11:57:50,626 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 11:57:50,633 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 11:57:50,963 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 11:57:50,970 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 11:57:51,065 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 11:57:51,157 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 11:57:51,452 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 11:57:51,666 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 11:57:52,703 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 11:57:52,712 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 11:57:52,781 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 11:57:54,132 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 062ecadf-07da-46aa-b0cd-373085a7e485
+
+2021-04-18 11:57:54,722 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@118f2486, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bbe532b, org.springframework.security.web.header.HeaderWriterFilter@5bc40f5d, org.springframework.web.filter.CorsFilter@4d071e4b, org.springframework.security.web.authentication.logout.LogoutFilter@35b79b1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@abe7d36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16e84d93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b441609, org.springframework.security.web.session.SessionManagementFilter@5b9df3b3, org.springframework.security.web.access.ExceptionTranslationFilter@205b73d8]
+2021-04-18 11:57:54,810 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 11:57:55,008 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 11:57:55,089 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 11:57:55,102 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 8.519 seconds (JVM running for 9.116)
+2021-04-18 11:58:10,540 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 11:58:10,540 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 11:58:10,542 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 1 ms
+2021-04-18 11:58:16,364 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 11:58:16,366 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 12:03:00,959 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-7] Order addOrder()
+2021-04-18 12:03:00,959 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-7] Order addOrder()
+2021-04-18 12:03:01,515 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.cg.onlineshopping.entities.Order.customerOrder -> com.cg.onlineshopping.entities.Customer; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.cg.onlineshopping.entities.Order.customerOrder -> com.cg.onlineshopping.entities.Customer] with root cause
+org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.cg.onlineshopping.entities.Order.customerOrder -> com.cg.onlineshopping.entities.Customer
+	at org.hibernate.engine.spi.CascadingActions$8.noCascade(CascadingActions.java:379)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:169)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.cascadeOnFlush(AbstractFlushingEventListener.java:159)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:149)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:82)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:93)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1362)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:453)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3212)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2380)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy116.saveAll(Unknown Source)
+	at com.cg.onlineshopping.service.OrderServiceImpl.addOrder(OrderServiceImpl.java:43)
+	at com.cg.onlineshopping.controller.OrderRestController.addOrder(OrderRestController.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-04-18 12:04:05,440 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-9] Order addOrder()
+2021-04-18 12:04:05,441 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-9] Order addOrder()
+2021-04-18 12:09:33,200 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 12:09:33,202 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 12:11:44,907 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-5] Order addOrder()
+2021-04-18 12:11:44,910 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-5] Order addOrder()
+2021-04-18 12:14:31,548 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 12:14:31,549 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 12:15:28,269 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 12:15:28,270 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 12:16:35,385 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 12:16:35,386 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart viewCustomer()
+2021-04-18 12:16:45,532 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 12:16:45,533 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-4] Cart viewCustomer()
+2021-04-18 12:16:50,852 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-5] Order addOrder()
+2021-04-18 12:16:50,853 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-5] Order addOrder()
+2021-04-18 12:19:20,803 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 12:19:20,831 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 18380 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 12:19:20,832 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 12:19:22,257 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 12:19:22,397 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 127 ms. Found 7 JPA repository interfaces.
+2021-04-18 12:19:22,923 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@34780cd9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 12:19:22,936 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 12:19:23,964 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 12:19:23,992 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 12:19:23,993 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 12:19:23,994 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 12:19:24,355 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 12:19:24,357 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3385 ms
+2021-04-18 12:19:24,827 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 12:19:24,836 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 12:19:25,159 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 12:19:25,164 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 12:19:25,240 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 12:19:25,316 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 12:19:25,561 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 12:19:25,745 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 12:19:27,478 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 12:19:27,497 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 12:19:27,581 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 12:19:28,550 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 253cafab-0f57-433d-9652-457c4d3253d3
+
+2021-04-18 12:19:29,000 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4516c2ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@4889fbba, org.springframework.security.web.header.HeaderWriterFilter@3e0a112f, org.springframework.web.filter.CorsFilter@44f338ec, org.springframework.security.web.authentication.logout.LogoutFilter@49392256, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@572db5ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4987142d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64acf8d2, org.springframework.security.web.session.SessionManagementFilter@6c9b6332, org.springframework.security.web.access.ExceptionTranslationFilter@67b20b4c]
+2021-04-18 12:19:29,153 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 12:19:29,583 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 12:19:29,722 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 12:19:29,749 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 10.034 seconds (JVM running for 10.729)
+2021-04-18 12:19:34,382 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 12:19:34,383 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 12:19:34,386 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 2 ms
+2021-04-18 12:19:34,507 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-1] Order removeOrder()
+2021-04-18 12:19:34,508 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-1] Order removeOrder()
+2021-04-18 12:19:34,985 INFO org.hibernate.event.internal.DefaultLoadEventListener [http-nio-8086-exec-1] HHH000327: Error performing load command
+org.hibernate.HibernateException: More than one row with the given identifier was found: 7062, for class: com.cg.onlineshopping.entities.Order
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.extractEntityResult(AbstractLoadPlanBasedEntityLoader.java:348)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:292)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4436)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4426)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:569)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:537)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1186)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1175)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:193)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2786)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2767)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2723)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy104.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy104.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy116.findById(Unknown Source)
+	at com.cg.onlineshopping.service.OrderServiceImpl.removeOrder(OrderServiceImpl.java:62)
+	at com.cg.onlineshopping.controller.OrderRestController.removeOrder(OrderRestController.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-04-18 12:19:35,001 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: More than one row with the given identifier was found: 7062, for class: com.cg.onlineshopping.entities.Order; nested exception is org.hibernate.HibernateException: More than one row with the given identifier was found: 7062, for class: com.cg.onlineshopping.entities.Order] with root cause
+org.hibernate.HibernateException: More than one row with the given identifier was found: 7062, for class: com.cg.onlineshopping.entities.Order
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.extractEntityResult(AbstractLoadPlanBasedEntityLoader.java:348)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:292)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4436)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4426)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:569)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:537)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1186)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1175)
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:193)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2786)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2767)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2723)
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy104.find(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy104.find(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:310)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy116.findById(Unknown Source)
+	at com.cg.onlineshopping.service.OrderServiceImpl.removeOrder(OrderServiceImpl.java:62)
+	at com.cg.onlineshopping.controller.OrderRestController.removeOrder(OrderRestController.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-04-18 12:24:03,053 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 12:24:03,109 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 14088 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 12:24:03,110 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 12:24:05,035 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 12:24:05,235 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 182 ms. Found 7 JPA repository interfaces.
+2021-04-18 12:24:05,891 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@68868328' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 12:24:05,901 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 12:24:06,522 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 12:24:06,546 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 12:24:06,548 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 12:24:06,550 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 12:24:06,896 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 12:24:06,898 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3705 ms
+2021-04-18 12:24:07,413 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 12:24:07,425 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 12:24:08,014 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 12:24:08,026 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 12:24:08,165 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 12:24:08,284 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 12:24:08,551 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 12:24:08,801 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 12:24:10,329 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 12:24:10,350 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 12:24:10,517 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 12:24:11,754 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 52d4af52-63f0-4378-9fbc-da41243c9fda
+
+2021-04-18 12:24:12,141 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16f62062, org.springframework.security.web.context.SecurityContextPersistenceFilter@71b32407, org.springframework.security.web.header.HeaderWriterFilter@24a1858a, org.springframework.web.filter.CorsFilter@61ec2cb5, org.springframework.security.web.authentication.logout.LogoutFilter@5b9df3b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@400df2b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d7f9b33, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3889c343, org.springframework.security.web.session.SessionManagementFilter@7804a783, org.springframework.security.web.access.ExceptionTranslationFilter@1631dbbc]
+2021-04-18 12:24:12,232 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 12:24:12,432 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 12:24:12,489 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 12:24:12,503 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 10.091 seconds (JVM running for 10.815)
+2021-04-18 12:24:17,823 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 12:24:17,823 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 12:24:17,825 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 1 ms
+2021-04-18 12:24:17,890 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 12:24:17,890 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 12:24:20,418 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 12:24:20,419 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-3] Cart viewCustomer()
+2021-04-18 12:24:31,324 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-5] Order addOrder()
+2021-04-18 12:24:31,325 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-5] Order addOrder()
+2021-04-18 14:08:36,770 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h29m58s404ms359µs).
+2021-04-18 14:39:12,994 INFO com.cg.onlineshopping.controller.CustomerRestController [http-nio-8086-exec-7] Customer viewCustomerById()
+2021-04-18 14:39:13,109 INFO com.cg.onlineshopping.service.CustomerServiceImpl [http-nio-8086-exec-7] Customer viewCustomerById()
+2021-04-18 14:39:16,340 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-8] Entered viewAllProducts
+2021-04-18 14:39:16,342 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-8] Entered viewAllProducts()
+2021-04-18 14:40:20,848 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-10] Entered viewAllProducts
+2021-04-18 14:40:20,850 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-10] Entered viewAllProducts()
+2021-04-18 14:40:24,279 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-1] Entered viewAllProducts
+2021-04-18 14:40:24,280 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-1] Entered viewAllProducts()
+2021-04-18 14:41:34,045 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 14:41:34,046 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 14:41:34,223 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-3] Address Not Found
+2021-04-18 14:41:44,104 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 14:41:44,106 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 14:41:44,143 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-5] Address Not Found
+2021-04-18 14:49:49,524 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 14:49:49,527 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 14:49:49,583 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-7] Address Not Found
+2021-04-18 14:49:55,080 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-8] Address viewAddress()
+2021-04-18 14:49:55,080 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-8] Address viewAddress()
+2021-04-18 14:49:55,172 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-8] Address Not Found
+2021-04-18 14:53:34,121 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 14:53:34,123 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 14:53:34,130 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-10] Address Not Found
+2021-04-18 14:53:44,435 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 14:53:44,460 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 14:53:44,468 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-1] Address Not Found
+2021-04-18 14:54:54,489 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 14:54:54,491 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 14:54:54,500 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-3] Address Not Found
+2021-04-18 14:54:59,756 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-4] Address viewAddress()
+2021-04-18 14:54:59,757 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-4] Address viewAddress()
+2021-04-18 14:54:59,765 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-4] Address Not Found
+2021-04-18 14:55:21,653 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-5] Validation failed for argument [0] in public com.cg.onlineshopping.entities.Address com.cg.onlineshopping.controller.AddressRestController.addAddress(com.cg.onlineshopping.entities.Address) with 6 errors: [Field error in object 'address' on field 'country': rejected value []; codes [NotEmpty.address.country,NotEmpty.country,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.country,country]; arguments []; default message [country]]; default message [Country should not empty]] [Field error in object 'address' on field 'state': rejected value []; codes [NotEmpty.address.state,NotEmpty.state,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.state,state]; arguments []; default message [state]]; default message [State should not empty]] [Field error in object 'address' on field 'pincode': rejected value []; codes [Size.address.pincode,Size.pincode,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.pincode,pincode]; arguments []; default message [pincode],10,6]; default message [Pincode should minimum be 6 and maximum 10]] [Field error in object 'address' on field 'streetNo': rejected value []; codes [NotEmpty.address.streetNo,NotEmpty.streetNo,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.streetNo,streetNo]; arguments []; default message [streetNo]]; default message [Stree_no should not empty]] [Field error in object 'address' on field 'city': rejected value []; codes [NotEmpty.address.city,NotEmpty.city,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.city,city]; arguments []; default message [city]]; default message [City should not empty]] [Field error in object 'address' on field 'buildingName': rejected value []; codes [NotEmpty.address.buildingName,NotEmpty.buildingName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.buildingName,buildingName]; arguments []; default message [buildingName]]; default message [Building Name should not empty]] 
+2021-04-18 15:01:03,284 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-7] Validation failed for argument [0] in public com.cg.onlineshopping.entities.Address com.cg.onlineshopping.controller.AddressRestController.addAddress(com.cg.onlineshopping.entities.Address): [Field error in object 'address' on field 'pincode': rejected value [50047]; codes [Size.address.pincode,Size.pincode,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.pincode,pincode]; arguments []; default message [pincode],10,6]; default message [Pincode should minimum be 6 and maximum 10]] 
+2021-04-18 15:01:22,966 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-9] Address addAddress()
+2021-04-18 15:01:22,967 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-9] Address addAddress()
+2021-04-18 15:01:41,961 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 15:01:41,962 INFO com.cg.onlineshopping.service.AddressServiceImpl [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 15:01:41,974 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-10] Address Not Found
+2021-04-18 15:11:00,026 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 15:11:00,056 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 13428 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 15:11:00,057 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 15:11:01,309 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 15:11:01,495 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 173 ms. Found 7 JPA repository interfaces.
+2021-04-18 15:11:02,245 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@66b59b7d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:11:02,261 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:11:05,425 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 15:11:05,441 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 15:11:05,442 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 15:11:05,442 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 15:11:05,722 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 15:11:05,724 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5579 ms
+2021-04-18 15:11:06,158 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 15:11:06,165 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 15:11:06,592 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 15:11:06,601 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 15:11:06,734 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 15:11:06,929 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 15:11:07,237 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 15:11:07,465 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 15:11:08,752 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 15:11:08,763 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 15:11:08,869 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 15:11:10,623 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: ad89463f-4f5d-4d36-a254-02122167dbb9
+
+2021-04-18 15:11:11,228 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f31892e, org.springframework.security.web.context.SecurityContextPersistenceFilter@740fccd2, org.springframework.security.web.header.HeaderWriterFilter@1ee52741, org.springframework.web.filter.CorsFilter@3cd89c72, org.springframework.security.web.authentication.logout.LogoutFilter@6ec77cab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63ccb1b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@384b3fe7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fb46c10, org.springframework.security.web.session.SessionManagementFilter@abe7d36, org.springframework.security.web.access.ExceptionTranslationFilter@5b2c41f9]
+2021-04-18 15:11:11,359 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 15:11:12,185 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 15:11:12,267 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 15:11:12,286 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 12.998 seconds (JVM running for 13.676)
+2021-04-18 15:11:33,935 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 15:11:33,936 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 15:11:33,937 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 1 ms
+2021-04-18 15:11:34,013 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 15:12:59,086 INFO com.cg.onlineshopping.controller.CustomerRestController [http-nio-8086-exec-3] Customer viewCustomerById()
+2021-04-18 15:12:59,087 INFO com.cg.onlineshopping.service.CustomerServiceImpl [http-nio-8086-exec-3] Customer viewCustomerById()
+2021-04-18 15:12:59,197 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-4] Entered viewAllProducts
+2021-04-18 15:12:59,198 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-4] Entered viewAllProducts()
+2021-04-18 15:13:04,295 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 15:13:56,020 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-6] Validation failed for argument [0] in public com.cg.onlineshopping.entities.Address com.cg.onlineshopping.controller.AddressRestController.addAddress(com.cg.onlineshopping.entities.Address) with 6 errors: [Field error in object 'address' on field 'buildingName': rejected value []; codes [NotEmpty.address.buildingName,NotEmpty.buildingName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.buildingName,buildingName]; arguments []; default message [buildingName]]; default message [Building Name should not empty]] [Field error in object 'address' on field 'city': rejected value []; codes [NotEmpty.address.city,NotEmpty.city,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.city,city]; arguments []; default message [city]]; default message [City should not empty]] [Field error in object 'address' on field 'country': rejected value []; codes [NotEmpty.address.country,NotEmpty.country,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.country,country]; arguments []; default message [country]]; default message [Country should not empty]] [Field error in object 'address' on field 'streetNo': rejected value []; codes [NotEmpty.address.streetNo,NotEmpty.streetNo,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.streetNo,streetNo]; arguments []; default message [streetNo]]; default message [Stree_no should not empty]] [Field error in object 'address' on field 'pincode': rejected value []; codes [Size.address.pincode,Size.pincode,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.pincode,pincode]; arguments []; default message [pincode],10,6]; default message [Pincode should minimum be 6 and maximum 10]] [Field error in object 'address' on field 'state': rejected value []; codes [NotEmpty.address.state,NotEmpty.state,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.state,state]; arguments []; default message [state]]; default message [State should not empty]] 
+2021-04-18 15:17:18,842 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 15:17:48,137 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-9] Address viewAddress()
+2021-04-18 15:19:54,917 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 15:19:57,039 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 15:21:54,828 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 15:24:50,110 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 15:28:43,788 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-9] Address viewAddress()
+2021-04-18 15:28:47,716 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 15:29:01,120 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-2] Validation failed for argument [0] in public com.cg.onlineshopping.entities.Address com.cg.onlineshopping.controller.AddressRestController.addAddress(com.cg.onlineshopping.entities.Address) with 6 errors: [Field error in object 'address' on field 'city': rejected value []; codes [NotEmpty.address.city,NotEmpty.city,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.city,city]; arguments []; default message [city]]; default message [City should not empty]] [Field error in object 'address' on field 'pincode': rejected value []; codes [Size.address.pincode,Size.pincode,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.pincode,pincode]; arguments []; default message [pincode],10,6]; default message [Pincode should minimum be 6 and maximum 10]] [Field error in object 'address' on field 'streetNo': rejected value []; codes [NotEmpty.address.streetNo,NotEmpty.streetNo,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.streetNo,streetNo]; arguments []; default message [streetNo]]; default message [Stree_no should not empty]] [Field error in object 'address' on field 'state': rejected value []; codes [NotEmpty.address.state,NotEmpty.state,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.state,state]; arguments []; default message [state]]; default message [State should not empty]] [Field error in object 'address' on field 'country': rejected value []; codes [NotEmpty.address.country,NotEmpty.country,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.country,country]; arguments []; default message [country]]; default message [Country should not empty]] [Field error in object 'address' on field 'buildingName': rejected value []; codes [NotEmpty.address.buildingName,NotEmpty.buildingName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.buildingName,buildingName]; arguments []; default message [buildingName]]; default message [Building Name should not empty]] 
+2021-04-18 15:30:02,208 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 15:31:14,094 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 15:31:26,509 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 15:31:50,355 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-9] Validation failed for argument [0] in public com.cg.onlineshopping.entities.Address com.cg.onlineshopping.controller.AddressRestController.addAddress(com.cg.onlineshopping.entities.Address) with 6 errors: [Field error in object 'address' on field 'country': rejected value []; codes [NotEmpty.address.country,NotEmpty.country,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.country,country]; arguments []; default message [country]]; default message [Country should not empty]] [Field error in object 'address' on field 'streetNo': rejected value []; codes [NotEmpty.address.streetNo,NotEmpty.streetNo,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.streetNo,streetNo]; arguments []; default message [streetNo]]; default message [Stree_no should not empty]] [Field error in object 'address' on field 'state': rejected value []; codes [NotEmpty.address.state,NotEmpty.state,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.state,state]; arguments []; default message [state]]; default message [State should not empty]] [Field error in object 'address' on field 'buildingName': rejected value []; codes [NotEmpty.address.buildingName,NotEmpty.buildingName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.buildingName,buildingName]; arguments []; default message [buildingName]]; default message [Building Name should not empty]] [Field error in object 'address' on field 'city': rejected value []; codes [NotEmpty.address.city,NotEmpty.city,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.city,city]; arguments []; default message [city]]; default message [City should not empty]] [Field error in object 'address' on field 'pincode': rejected value []; codes [Size.address.pincode,Size.pincode,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.pincode,pincode]; arguments []; default message [pincode],10,6]; default message [Pincode should minimum be 6 and maximum 10]] 
+2021-04-18 15:35:54,482 INFO com.cg.onlineshopping.controller.CustomerRestController [http-nio-8086-exec-10] Customer viewCustomerById()
+2021-04-18 15:35:54,483 INFO com.cg.onlineshopping.service.CustomerServiceImpl [http-nio-8086-exec-10] Customer viewCustomerById()
+2021-04-18 15:35:54,566 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-1] Entered viewAllProducts
+2021-04-18 15:35:54,567 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-1] Entered viewAllProducts()
+2021-04-18 15:36:00,674 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-2] Address viewAddress()
+2021-04-18 15:38:37,039 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-4] Address viewAddress()
+2021-04-18 15:39:17,945 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 15:44:40,807 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 15:44:40,819 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 18720 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 15:44:40,820 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 15:44:42,033 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 15:44:42,213 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 161 ms. Found 7 JPA repository interfaces.
+2021-04-18 15:44:42,862 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1ab5f08a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:44:42,869 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:44:43,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 15:44:43,387 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 15:44:43,388 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 15:44:43,388 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 15:44:43,592 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 15:44:43,593 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2692 ms
+2021-04-18 15:44:43,923 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 15:44:43,930 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 15:44:44,285 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 15:44:44,302 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 15:44:44,391 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 15:44:44,546 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 15:44:44,815 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 15:44:45,017 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 15:44:46,149 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 15:44:46,161 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 15:44:46,236 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 15:44:47,247 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: e9793bd9-ac9c-4552-93d1-237c488f2a77
+
+2021-04-18 15:44:47,720 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@646ddc20, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c9b6332, org.springframework.security.web.header.HeaderWriterFilter@67b20b4c, org.springframework.web.filter.CorsFilter@22561412, org.springframework.security.web.authentication.logout.LogoutFilter@7ef3aa21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4889fbba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31e9d94f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32153bbe, org.springframework.security.web.session.SessionManagementFilter@2a7b5925, org.springframework.security.web.access.ExceptionTranslationFilter@7bd7c4cf]
+2021-04-18 15:44:47,825 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 15:44:48,032 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 15:44:48,091 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 15:44:48,107 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 7.911 seconds (JVM running for 8.508)
+2021-04-18 15:50:15,061 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 15:50:15,080 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 18372 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 15:50:15,081 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 15:50:16,314 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 15:50:16,482 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 154 ms. Found 7 JPA repository interfaces.
+2021-04-18 15:50:17,046 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c8c70d6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:50:17,053 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 15:50:17,820 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 15:50:17,848 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 15:50:17,849 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 15:50:17,850 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 15:50:18,105 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 15:50:18,106 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2930 ms
+2021-04-18 15:50:18,446 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 15:50:18,453 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 15:50:18,799 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 15:50:18,807 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 15:50:18,923 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 15:50:19,058 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 15:50:19,325 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 15:50:19,548 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 15:50:20,725 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 15:50:20,741 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 15:50:20,816 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 15:50:21,867 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 97359fc9-68ee-4af9-b153-ff72a4006a8b
+
+2021-04-18 15:50:22,249 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@136cad3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ee52741, org.springframework.security.web.header.HeaderWriterFilter@2643ed03, org.springframework.web.filter.CorsFilter@13e5b262, org.springframework.security.web.authentication.logout.LogoutFilter@4987142d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1640a6b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bbe532b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6500e886, org.springframework.security.web.session.SessionManagementFilter@5b2c41f9, org.springframework.security.web.access.ExceptionTranslationFilter@782e0844]
+2021-04-18 15:50:22,358 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 15:50:22,596 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 15:50:22,698 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 15:50:22,717 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 8.239 seconds (JVM running for 8.925)
+2021-04-18 15:51:00,438 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 15:51:00,438 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 15:51:00,440 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 1 ms
+2021-04-18 15:51:00,519 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 15:52:15,634 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 15:54:20,555 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 15:54:38,622 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-6] Address viewAddress()
+2021-04-18 15:54:48,484 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 15:56:10,988 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-9] Address viewAddress()
+2021-04-18 15:56:27,879 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 15:59:42,821 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-2] Address viewAddress()
+2021-04-18 15:59:47,611 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 16:00:12,896 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-4] Address viewAddress()
+2021-04-18 16:00:36,667 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 16:00:48,787 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-6] Address viewAddress()
+2021-04-18 16:01:36,870 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-8] Address viewAddress()
+2021-04-18 16:01:46,869 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-9] Address viewAddress()
+2021-04-18 16:04:44,812 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 16:04:50,087 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-2] Address viewAddress()
+2021-04-18 16:04:53,770 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-3] Order viewAllOrdersBycustomer()
+2021-04-18 16:06:13,264 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 16:06:17,452 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-6] Order viewAllOrdersBycustomer()
+2021-04-18 16:06:37,815 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-7] Address viewAddress()
+2021-04-18 16:06:43,676 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-8] Address viewAddress()
+2021-04-18 16:06:46,958 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-9] Order viewAllOrdersBycustomer()
+2021-04-18 16:08:42,598 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-1] Address viewAddress()
+2021-04-18 16:09:06,104 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-2] Address viewAddress()
+2021-04-18 16:09:09,618 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-3] Order viewAllOrdersBycustomer()
+2021-04-18 16:14:00,270 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 16:14:15,230 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-6] Entered viewAllProducts
+2021-04-18 16:14:15,231 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-6] Entered viewAllProducts()
+2021-04-18 16:14:43,661 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-8] Entered viewAllProducts
+2021-04-18 16:14:43,661 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-8] Entered viewAllProducts()
+2021-04-18 16:14:52,559 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 16:14:52,560 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-10] Cart viewCustomer()
+2021-04-18 16:14:52,627 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-9] Cart addCart()
+2021-04-18 16:14:52,628 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-9] Cart addCart()
+2021-04-18 16:15:01,309 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 16:15:01,310 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-1] Cart viewCustomer()
+2021-04-18 16:15:11,880 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-2] Cart removeCart()
+2021-04-18 16:15:11,880 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-2] Cart removeCart()
+2021-04-18 16:16:36,237 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 16:16:36,238 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-5] Cart viewCustomer()
+2021-04-18 16:17:15,384 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 16:17:15,385 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-6] Cart viewCustomer()
+2021-04-18 16:17:25,271 INFO com.cg.onlineshopping.controller.CartRestController [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 16:17:25,273 INFO com.cg.onlineshopping.service.CartServiceImpl [http-nio-8086-exec-7] Cart viewCustomer()
+2021-04-18 16:17:31,896 INFO com.cg.onlineshopping.controller.OrderRestController [http-nio-8086-exec-8] Order addOrder()
+2021-04-18 16:17:31,896 INFO com.cg.onlineshopping.service.OrderServiceImpl [http-nio-8086-exec-8] Order addOrder()
+2021-04-18 21:45:33,629 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-04-18 21:45:33,642 INFO org.springframework.boot.StartupInfoLogger [main] Starting OnlineShoppingApplication using Java 15.0.1 on LAPTOP-ENILR1HV with PID 14324 (C:\Users\narender\git\onlineshopping\OnlineShoppingApplication\bin\main started by narender in C:\Users\narender\git\onlineshopping\OnlineShoppingApplication)
+2021-04-18 21:45:33,699 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-18 21:45:34,946 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-18 21:45:35,094 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 129 ms. Found 7 JPA repository interfaces.
+2021-04-18 21:45:35,628 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1a22e0ef' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 21:45:35,634 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-18 21:45:36,105 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8086 (http)
+2021-04-18 21:45:36,119 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8086"]
+2021-04-18 21:45:36,120 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-18 21:45:36,121 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-18 21:45:36,305 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-18 21:45:36,306 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2531 ms
+2021-04-18 21:45:36,684 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-18 21:45:36,690 WARN com.zaxxer.hikari.util.DriverDataSource [main] Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-04-18 21:45:36,993 INFO com.zaxxer.hikari.pool.PoolBase [main] HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class oracle.jdbc.driver.T4CConnection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2021-04-18 21:45:37,000 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-18 21:45:37,280 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-18 21:45:37,693 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-18 21:45:38,005 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-18 21:45:38,327 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2021-04-18 21:45:39,826 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-18 21:45:39,848 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-18 21:45:39,963 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-18 21:45:41,659 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: d8312cba-2787-4841-9f5a-24b16d1b47b2
+
+2021-04-18 21:45:42,348 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b5a04b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a7b5925, org.springframework.security.web.header.HeaderWriterFilter@7bd7c4cf, org.springframework.web.filter.CorsFilter@41a3c6f5, org.springframework.security.web.authentication.logout.LogoutFilter@7b43f95c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c9b6332, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dec57c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b78a946, org.springframework.security.web.session.SessionManagementFilter@102f3f05, org.springframework.security.web.access.ExceptionTranslationFilter@3810806c]
+2021-04-18 21:45:42,615 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-18 21:45:42,949 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8086"]
+2021-04-18 21:45:43,088 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8086 (http) with context path ''
+2021-04-18 21:45:43,101 INFO org.springframework.boot.StartupInfoLogger [main] Started OnlineShoppingApplication in 10.029 seconds (JVM running for 10.594)
+2021-04-18 21:46:56,252 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8086-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-18 21:46:56,253 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-18 21:46:56,254 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8086-exec-1] Completed initialization in 1 ms
+2021-04-18 21:46:56,729 INFO com.cg.onlineshopping.controller.CustomerRestController [http-nio-8086-exec-1] Customer viewCustomerById()
+2021-04-18 21:46:56,730 INFO com.cg.onlineshopping.service.CustomerServiceImpl [http-nio-8086-exec-1] Customer viewCustomerById()
+2021-04-18 21:46:58,010 INFO com.cg.onlineshopping.controller.ProductRestController [http-nio-8086-exec-2] Entered viewAllProducts
+2021-04-18 21:46:58,011 INFO com.cg.onlineshopping.service.ProductServiceImpl [http-nio-8086-exec-2] Entered viewAllProducts()
+2021-04-18 21:47:00,702 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-3] Address viewAddress()
+2021-04-18 21:47:26,077 ERROR com.cg.onlineshopping.exception.GlobalExceptionHandler [http-nio-8086-exec-4] Validation failed for argument [0] in public com.cg.onlineshopping.entities.Address com.cg.onlineshopping.controller.AddressRestController.addAddress(com.cg.onlineshopping.entities.Address) with 6 errors: [Field error in object 'address' on field 'city': rejected value []; codes [NotEmpty.address.city,NotEmpty.city,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.city,city]; arguments []; default message [city]]; default message [City should not empty]] [Field error in object 'address' on field 'pincode': rejected value []; codes [Size.address.pincode,Size.pincode,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.pincode,pincode]; arguments []; default message [pincode],10,6]; default message [Pincode should minimum be 6 and maximum 10]] [Field error in object 'address' on field 'state': rejected value []; codes [NotEmpty.address.state,NotEmpty.state,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.state,state]; arguments []; default message [state]]; default message [State should not empty]] [Field error in object 'address' on field 'buildingName': rejected value []; codes [NotEmpty.address.buildingName,NotEmpty.buildingName,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.buildingName,buildingName]; arguments []; default message [buildingName]]; default message [Building Name should not empty]] [Field error in object 'address' on field 'streetNo': rejected value []; codes [NotEmpty.address.streetNo,NotEmpty.streetNo,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.streetNo,streetNo]; arguments []; default message [streetNo]]; default message [Stree_no should not empty]] [Field error in object 'address' on field 'country': rejected value []; codes [NotEmpty.address.country,NotEmpty.country,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [address.country,country]; arguments []; default message [country]]; default message [Country should not empty]] 
+2021-04-18 21:49:53,624 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-5] Address viewAddress()
+2021-04-18 21:49:58,606 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-6] Address viewAddress()
+2021-04-18 21:57:37,414 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-8] Address viewAddress()
+2021-04-18 21:58:49,355 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-10] Address viewAddress()
+2021-04-18 22:06:35,347 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-2] Address viewAddress()
+2021-04-18 22:06:59,821 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-4] Address viewAddress()
+2021-04-18 22:07:20,427 INFO com.cg.onlineshopping.controller.AddressRestController [http-nio-8086-exec-6] Address viewAddress()
