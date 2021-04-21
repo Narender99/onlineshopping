@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,7 @@ import com.cg.onlineshopping.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/onlineshopping/api")
 public class ProductRestController {
@@ -37,7 +39,7 @@ public class ProductRestController {
 		return productService.addProduct(product);
 
 	}
-	/*
+	
 	@GetMapping("/product")
     public List<Product> viewAllProduct()
     {
@@ -45,7 +47,7 @@ public class ProductRestController {
 
         return productService.viewAllProducts();
     }
-	 */
+	 
 	@PutMapping("/product")
 	public Product updateProduct(@Valid@RequestBody Product product)
 	{

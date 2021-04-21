@@ -17,8 +17,11 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer>{
 	public Customer removeCustomer(Customer cust);
 	public Customer viewCustomer(Customer cust);
 	public List<Customer> ViewAllCustomers(String location);*/
-	
+/*	
 	@Query("select c from Customer c where c.address=:address")
 	public List<Customer> viewAllCustomer(@Param("address")String address);
-
+*/
+	/*
+	@Query("select c from Customer c where c.customerId=:customerId and c.password=:passowrd")
+	public Customer validate(@Param("customerId")int customerId, @Param("password") String password);*/
 }

@@ -45,27 +45,29 @@ public class CartServiceImpl implements CartService {
 	}
 
 	@Override
-	public Cart removeCart(int cartId)
+	public List<Cart> removeCart(int cartId)
 	{
 		logger.info("Cart removeCart()");
-		Cart cart = cartRepo.findById(cartId).get();
-		if(cart == null)
-			throw new CartNotFoundException("Cart Not Found");
-		else {
-			cartRepo.delete(cart);
-			return cart;
-		}
+		cartRepo.deleteById(cartId);
+		return cartRepo.findAll();
 	}
 
 	@Override
-	public Cart viewCustomer(int customerId)
+	public List<Cart> viewCustomer(int customerId)
 	{
 		logger.info("Cart viewCustomer()");
-		Cart cart = cartRepo.viewCartByCustomerId(customerId);
-		if(cart == null)
+		List<Cart> cart  = cartRepo.viewCartByCustomerId(customerId);
+		if(cart.isEmpty())
 			throw new CartNotFoundException("Cart Not Found");
 		else
 			return cart;
+	}
+
+	@Override
+	public List<Cart> allCarts() {
+		// TODO Auto-generated method stub
+		logger.info("Cart allcarts()");
+		return cartRepo.findAll();
 	}
 
 }

@@ -57,7 +57,7 @@ public class CartServiceTest {
 		Customer cust = new Customer();
 		cust.setCustomerId(1000);
 		cart.setCustomerCart(cust);
-		Mockito.when(cartRepo.viewCartByCustomerId(cart.getCustomerCart().getCustomerId())).thenReturn(cart);
+		//Mockito.when(cartRepo.viewCartByCustomerId(cart.getCustomerCart().getCustomerId())).thenReturn(cart);
 		assertThat(cartService.viewCustomer(cart.getCustomerCart().getCustomerId())).isEqualTo(cart);
 	}
 }

@@ -76,6 +76,12 @@ public class CustomerRestController {
 		return customerService.removeCustomer(custId);
 
 	}
+	
+	/*@GetMapping("/customer/{cust}")
+	public Customer validate(@PathVariable("cust")Customer cust) {
+		return customerService.validate(cust);
+		
+	}*/
 
 
 }

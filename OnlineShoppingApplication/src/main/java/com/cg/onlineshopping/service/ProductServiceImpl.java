@@ -70,7 +70,7 @@ public class ProductServiceImpl implements ProductService {
 		return product.get();
 	}
 
-	@Override
+/*	@Override
 	public List<Product> viewProductsByCategory(int catId) {
 		logger.info("Entered viewProductByCategory()");
 		List<Product> list = productRepo.viewAllProductsByCategory(catId);
@@ -79,7 +79,7 @@ public class ProductServiceImpl implements ProductService {
 		else
 			return list;		
 
-	}
+	}*/
 
 	@Override
 	public Product removeProduct(int productId) {

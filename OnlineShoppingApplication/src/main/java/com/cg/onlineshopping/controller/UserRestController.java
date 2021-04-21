@@ -1,5 +1,7 @@
 package com.cg.onlineshopping.controller;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +27,7 @@ public class UserRestController {
 	Logger logger = LoggerFactory.getLogger(UserRestController.class);
 
 	@PostMapping("/user")
-	public User adduser(@RequestBody User user) {
+	public User adduser(@Valid @RequestBody User user) {
 		
 		logger.info("User addUser()");
 		

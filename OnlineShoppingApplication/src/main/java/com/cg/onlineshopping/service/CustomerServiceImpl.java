@@ -66,7 +66,7 @@ public class CustomerServiceImpl implements CustomerService {
 		else 
 			return cust.get();
 	}
-
+/*
 	@Override
 	public List<Customer> ViewAllCustomers(String location) {
 		logger.info("Customer viewCustomerByLocation()");
@@ -75,7 +75,7 @@ public class CustomerServiceImpl implements CustomerService {
 			throw new CustomerNotFoundException("No Customer Found");
 		return cust;
 	}
-
+*/
 	@Override
 	public List<Customer> viewAllCustomer() {
 		logger.info("Customer viewAllCustomer()");
@@ -84,5 +84,12 @@ public class CustomerServiceImpl implements CustomerService {
 			throw new CustomerNotFoundException("No Customer Found");
 		return customers;
 	}
-
+/*
+	@Override
+	public Customer validate(Customer cust) {
+		// TODO Auto-generated method stub
+		Customer customer = custRepo.validate(cust.getCustomerId(), cust.getPassword());
+		return customer;
+	}
+*/
 }

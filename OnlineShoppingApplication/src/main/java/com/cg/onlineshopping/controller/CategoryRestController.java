@@ -2,7 +2,10 @@ package com.cg.onlineshopping.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +19,8 @@ import com.cg.onlineshopping.entities.Category;
 import com.cg.onlineshopping.entities.Order;
 import com.cg.onlineshopping.repository.CategoryRepository;
 
+@CrossOrigin
+
 @RestController
 @RequestMapping("/onlineshopping/api")
 public class CategoryRestController {
@@ -24,7 +29,7 @@ public class CategoryRestController {
 	CategoryRepository categoryRepository;
 
 	@PostMapping("/category")
-	public Category addCategory(@RequestBody Category cat) {
+	public Category addCategory(@Valid @RequestBody Category cat) {
 
 		categoryRepository.save(cat);
 
@@ -33,7 +38,7 @@ public class CategoryRestController {
 	}
 
 	@PutMapping("/category")
-	public Category updateCategory(@RequestBody Category cat) {
+	public Category updateCategory(@Valid @RequestBody Category cat) {
 		//Category cat = categoryRepository.findById(catId).get();
 		categoryRepository.save(cat);
 		return cat;

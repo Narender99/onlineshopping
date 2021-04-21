@@ -20,4 +20,6 @@ public interface AddressService {
 	
 	public Address viewAddress(int addId);
 	
+	public Address viewAddressByCustomerId(int customerId);
+	
 }

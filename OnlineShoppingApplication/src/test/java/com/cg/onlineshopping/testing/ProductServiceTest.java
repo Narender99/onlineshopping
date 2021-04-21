@@ -44,10 +44,10 @@ public class ProductServiceTest {
 		product.setColor("Blue");
 		product.setDimension("4HD");
 		product.setManufacturer("SamsungCompany");
-		product.setQuantity(2);
+		//product.setQuantity(2);
 		Cart cart = new Cart();
 		cart.setCartId(6002);
-		product.setCart(cart);
+		//product.setCart(cart);
 		Category cat = new Category();
 		cat.setCatId(4002);
 		product.setCategory(cat);
@@ -66,10 +66,10 @@ public class ProductServiceTest {
 	product.setPrice(65000);
 	product.setDimension("2D");
 	product.setManufacturer("SonyCompany");
-	product.setQuantity(1);
+	//product.setQuantity(1);
 	Cart cart = new Cart();
 	cart.setCartId(6003);
-	product.setCart(cart);
+	//product.setCart(cart);
 	Category cat = new Category();
 	cat.setCatId(4003);
 	product.setCategory(cat);
@@ -91,10 +91,10 @@ public class ProductServiceTest {
 		product.setPrice(65000);
 		product.setDimension("2D");
 		product.setManufacturer("SonyCompany");
-		product.setQuantity(1);
+		//product.setQuantity(1);
 		Cart cart = new Cart();
 		cart.setCartId(6003);
-		product.setCart(cart);
+		//product.setCart(cart);
 		Category cat = new Category();
 		cat.setCatId(4003);
 		Mockito.when(productRepository.findById(product.getProductId())).thenReturn(Optional.of(product));
@@ -111,10 +111,10 @@ public class ProductServiceTest {
 		product.setPrice(65000);
 		product.setDimension("2D");
 		product.setManufacturer("SonyCompany");
-		product.setQuantity(1);
+		//product.setQuantity(1);
 		Cart cart = new Cart();
 		cart.setCartId(6003);
-		product.setCart(cart);
+		//product.setCart(cart);
 		Category cat = new Category();
 		cat.setCatId(4003);
 		 Mockito.when(productRepository.existsById(product.getProductId())).thenReturn(false);
@@ -158,7 +158,7 @@ public class ProductServiceTest {
 		cart1.setCustomerCart(cust1);
 		
 		product1.setCategory(cat1);
-		product1.setCart(cart1);
+		//product1.setCart(cart1);
 		
 		Product product2 = new Product();
 		product2.setProductName("LG TV");
@@ -183,7 +183,7 @@ public class ProductServiceTest {
 		cart2.setCustomerCart(cust2);
 		
 		product2.setCategory(cat2);
-		product2.setCart(cart2);
+		//product2.setCart(cart2);
 		
 		List<Product> product = new ArrayList<>();
 		product.add(product1); product.add(product2);
@@ -217,7 +217,7 @@ public class ProductServiceTest {
 		cart1.setCustomerCart(cust1);
 		
 		product1.setCategory(cat1);
-		product1.setCart(cart1);
+		//product1.setCart(cart1);
 		
 		Product product2 = new Product();
 		product2.setProductName("LG TV");
@@ -242,7 +242,7 @@ public class ProductServiceTest {
 		cart2.setCustomerCart(cust2);
 		
 		product2.setCategory(cat2);
-		product2.setCart(cart2);
+		//product2.setCart(cart2);
 		
 		List<Product> product = new ArrayList<>();
 		product.add(product1); product.add(product2);

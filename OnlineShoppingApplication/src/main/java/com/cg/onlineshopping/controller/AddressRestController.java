@@ -2,6 +2,8 @@ package com.cg.onlineshopping.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +30,7 @@ public class AddressRestController {
 
 
 	@PostMapping("/address")
-	public Address addAddress(@RequestBody Address add)
+	public Address addAddress(@Valid @RequestBody Address add)
 	{
 		logger.info("Address addAddress()");
 		return addressService.addAddress(add);
@@ -41,15 +43,15 @@ public class AddressRestController {
 			return addressService.viewAllAddress(addId);
 		}*/
 
-	@GetMapping("/address/{addId}")
-	public Address viewAddress(@PathVariable("addId")int addId)
+	@GetMapping("/address/{customerId}")
+	public Address viewAddress(@PathVariable("customerId")int customerId)
 	{
 		logger.info("Address viewAddress()");
-		return addressService.viewAddress(addId);
+		return addressService.viewAddressByCustomerId(customerId);
 	}
 	
 	@PutMapping("/address")
-	public Address updateAddress(@RequestBody Address add)
+	public Address updateAddress(@Valid @RequestBody Address add)
 	{
 		logger.info("Address updateAddress()");
 		return addressService.updateAddress(add);

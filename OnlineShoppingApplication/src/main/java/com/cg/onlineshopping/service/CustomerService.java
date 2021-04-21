@@ -14,8 +14,10 @@ public interface CustomerService {
 	
 	public Customer viewCustomer(Integer custId);
 	
-	public List<Customer> ViewAllCustomers(String location);
+	//public List<Customer> ViewAllCustomers(String location);
 	
 	public List<Customer> viewAllCustomer();
+	
+	//public Customer validate(Customer cust);
 
 }

@@ -21,9 +21,16 @@ public interface OrderRepository extends JpaRepository<Order, Integer>{
 	public List<Order> viewAllOrdersByLocation(String location);
 	public List<Order> viewAllOrderByUserId(String userid);*/
 
-	@Query("select o from Order o where o.orderDate=:orderDate")
+	/*@Query("select o from Order o where o.orderDate=:orderDate")
 	public List<Order> viewAllOrderByDate(@Param("orderDate")LocalDate localdate);
 
 	@Query("select o from Order o where o.customerOrder.address=:address")
 	public List<Order> viewAllCustomersByLocation(@Param("address")String address);
-}
+	*/
+	
+    @Query("select o from Order o where o.customerOrder.customerId=:customerId")
+    public List<Order> viewAllOrdersByCustomer(@Param("customerId") int customerId);
+    
+    @Query("delete from Order o where o.customerOrder.customerId=:customerId")
+    public void deleteOrderByCustomerId(@Param("customerId") int customerId);
+ }

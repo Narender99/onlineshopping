@@ -19,9 +19,9 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 	 public List<Product> viewProductsByCategory(String cat); 
 	 public Product removeProduct(String prodid);*/
 	
-	@Query("select p from Product p where p.cart.cartId=:catId")
+	/*@Query("select p from Product p where p.cart.cartId=:catId")
     public List<Product> viewAllProductsByCart(@Param("catId")int catId);
    
     @Query("select p from Product p where p.category.catId=:catId")
-    public List<Product> viewAllProductsByCategory(@Param("catId")int catId);
+    public List<Product> viewAllProductsByCategory(@Param("catId")int catId);*/
 }

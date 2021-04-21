@@ -21,7 +21,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "address_details")
+@Table(name = "address_table")
 public class Address {
 
 	@Id 
@@ -55,9 +55,9 @@ public class Address {
 	private String pincode;
 
 	//mapping part
-	@JsonIgnore
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "addressOrder")
-	private List<Order> order = new ArrayList<Order>();
+	//@JsonIgnore
+	//@OneToMany(fetch = FetchType.EAGER, mappedBy = "addressOrder")
+	//private List<Order> order = new ArrayList<Order>();
 
 
 	@OneToOne
@@ -79,7 +79,7 @@ public class Address {
 		this.state = state;
 		this.country = country;
 		this.pincode = pincode;
-		this.order = order;
+		//this.order = order;
 		this.customerAdd = customerAdd;
 	}
 
@@ -153,7 +153,7 @@ public class Address {
 		this.pincode = pincode;
 	}
 
-
+/*
 	public List<Order> getOrder() {
 		return order;
 	}
@@ -163,7 +163,7 @@ public class Address {
 		this.order = order;
 	}
 
-
+*/
 	public Customer getCustomerAdd() {
 		return customerAdd;
 	}
@@ -173,14 +173,21 @@ public class Address {
 		this.customerAdd = customerAdd;
 	}
 
+	@Override
+	public String toString() {
+		return "Address [addressId=" + addressId + ", streetNo=" + streetNo + ", buildingName=" + buildingName
+				+ ", city=" + city + ", state=" + state + ", country=" + country + ", pincode=" + pincode
+				+ ", customerAdd=" + customerAdd + "]";
+	}
 
+/*
 	@Override
 	public String toString() {
 		return "Address [addressId=" + addressId + ", streetNo=" + streetNo + ", buildingName=" + buildingName
 				+ ", city=" + city + ", state=" + state + ", country=" + country + ", pincode=" + pincode + ", order="
 				+ order + ", customerAdd=" + customerAdd + "]";
 	}
-
+*/
 	
 	 
 	 

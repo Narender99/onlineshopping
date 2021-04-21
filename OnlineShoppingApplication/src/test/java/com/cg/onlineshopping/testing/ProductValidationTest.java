@@ -49,7 +49,7 @@ public class ProductValidationTest {
 		cart.setCartId(5002);
 
 		product.setCategory(cat);
-		product.setCart(cart);
+		//product.setCart(cart);
 
 		Set<ConstraintViolation<Product>> vio = validator.validate(product);
 		assertTrue(vio.isEmpty());

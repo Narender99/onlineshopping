@@ -16,7 +16,9 @@ public interface CartService {
 	//public Cart removeProductFromCart(Cart cart,Product p);
 	//public Cart updateProductQuantity(Cart cart, Product p,int quantity);
 	//public Cart removeAllProducts(Cart cart);
-	public Cart removeCart(int cartId);
+	public List<Cart> removeCart(int cartId);
 	//public List<Product> viewAllProducts(Cart cart);
-	public Cart viewCustomer(int customerId);
+	public List<Cart> viewCustomer(int customerId);
+	
+	public List<Cart> allCarts();
 }

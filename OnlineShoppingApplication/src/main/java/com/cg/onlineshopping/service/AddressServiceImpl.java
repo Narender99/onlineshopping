@@ -81,4 +81,11 @@ public class AddressServiceImpl implements AddressService {
 			return viewAdd.get();
 		}
 	}
+
+	@Override
+	public Address viewAddressByCustomerId(int customerId) {
+		// TODO Auto-generated method stub
+		Address add = addRepo.viewAddressByCustomerId(customerId);
+		return add ;
+	}
 }

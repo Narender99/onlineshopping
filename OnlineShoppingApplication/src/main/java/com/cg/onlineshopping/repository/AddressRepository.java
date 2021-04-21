@@ -18,5 +18,6 @@ public interface AddressRepository extends JpaRepository<Address, Integer>{
 	public List<Address> viewAllAddress(String id);
 	public Address viewAddress(Address add);*/
 	
-	
+	@Query("select a from Address a where a.customerAdd.customerId=:customerId")
+	public Address viewAddressByCustomerId(@Param("customerId") int customerId);
 }

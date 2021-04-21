@@ -10,7 +10,7 @@ import com.cg.onlineshopping.entities.Order;
 @Service
 public interface OrderService {
 	
-	public Order addOrder(Order order);
+	public List<Order> addOrder(Order[] order);
 	
 	public Order updateOrder(Order order);
 	
@@ -18,10 +18,14 @@ public interface OrderService {
 	
 	public Order viewOrder(Order order);
 	
-	public List<Order> viewAllOrders(LocalDate date);
+	//public List<Order> viewAllOrders(LocalDate date);
 	
-	public List<Order> viewAllOrdersByLocation(String location);
+	//public List<Order> viewAllOrdersByLocation(String location);
 	
 	public Order viewAllOrderById(int id);
+	
+	public List<Order> viewAllOrdersByCustomer(int customerId);
+	
+	public void deleteOrdersByCustomerId(int customerId);
 
 }

@@ -2,6 +2,7 @@ package com.cg.onlineshopping.service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import org.slf4j.Logger;
@@ -33,13 +34,14 @@ public class OrderServiceImpl implements OrderService {
 	Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
 
 	@Override
-	public Order addOrder(Order order) {
+	public List<Order> addOrder(Order[] order) {
 		logger.info("Order addOrder()");
-		if(order == null)
+		List<Order> orderList = Arrays.asList(order);
+		if(orderList.isEmpty())
 			throw new OrderNotFoundException("Order Not Found");
 		else {
-			orderRepo.save(order);
-			return order;
+			orderRepo.saveAll(orderList);
+			return orderList;
 		}
 	}
 
@@ -77,7 +79,7 @@ public class OrderServiceImpl implements OrderService {
 			return orders.get();
 		}
 	}
-
+/*
 	@Override
 	public List<Order> viewAllOrders(LocalDate date) {
 		logger.info("Order viewAllOrders()");
@@ -98,7 +100,7 @@ public class OrderServiceImpl implements OrderService {
 			return list;
 
 	}
-
+*/
 	@Override
 	public Order viewAllOrderById(int id) {
 		logger.info("Order viewAllOrderByUserId()");;
@@ -108,6 +110,20 @@ public class OrderServiceImpl implements OrderService {
 			throw new OrderNotFoundException("Order Not Found");
 		else
 			return list.get();
+	}
+
+	@Override
+	public List<Order> viewAllOrdersByCustomer(int customerId) {
+		// TODO Auto-generated method stub
+		
+		return orderRepo.viewAllOrdersByCustomer(customerId);
+	}
+
+	@Override
+	public void deleteOrdersByCustomerId(int customerId) {
+		// TODO Auto-generated method stub
+		orderRepo.deleteOrderByCustomerId(customerId);
+		
 	}
 
 

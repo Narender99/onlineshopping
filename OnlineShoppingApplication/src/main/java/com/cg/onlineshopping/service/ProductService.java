@@ -14,7 +14,7 @@ public interface ProductService {
 	
 	public Product viewProduct(int id);
 	
-	public List<Product> viewProductsByCategory(int catId); 
+	//public List<Product> viewProductsByCategory(int catId); 
 	
 	public Product removeProduct(int productId);
 }

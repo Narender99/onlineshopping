@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
-@Table(name = "customer_details")
+@Table(name = "customer_table")
 public class Customer {
 
 	@Id
@@ -33,13 +33,13 @@ public class Customer {
 	@SequenceGenerator(name = "customer_seq",sequenceName = "customer_seq", allocationSize=1)
 	private int customerId;
 
-	@Column(name = "first_name")
+	@Column(name = "full_name")
 	@NotNull(message= "First Name can not be null")
-	private String firstName;
+	private String fullName;
 
-	@Column(name = "last_name")
-	@NotNull(message = "Last Name should not be null")
-	private String lastName;
+	//@Column(name = "last_name")
+	//@NotNull(message = "Last Name should not be null")
+	//private String lastName;
 
 	@Column(name = "mobile_number")
 	@Size(min = 10, message="Mobile no should be in 10 digits")
@@ -48,19 +48,24 @@ public class Customer {
 	@Column(name = "email")
 	@Email(message = "Email should be valid")
 	private String email;
+	
 
-	@Column(name = "address")
-	@NotEmpty(message = "address cannot be empty")
-	private String address;
+	@Column(name = "password")
+	@NotNull(message = "password should not be null")
+	private String password;
+	
+	//@Column(name = "address")
+	//@NotEmpty(message = "address cannot be empty")
+	//private String address;
 
 	//mapping
 	@JsonIgnore
 	@OneToOne(mappedBy="customerAdd")
 	private Address addressCust;
 
-	@JsonIgnore
-	@OneToOne(mappedBy="customerUser")
-	private User user;
+	//@JsonIgnore
+	//@OneToOne(mappedBy="customerUser")
+	//private User user;
 
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "customerOrder")
@@ -76,109 +81,129 @@ public class Customer {
 		super();
 	}
 
-	public Customer(int customerId, String firstName, String lastName, String mobileNumber, String email,
-			String address, Address addressCust, User user, Set<Order> products, Cart cart) {
+
+
+	public Customer(int customerId, @NotNull(message = "First Name can not be null") String fullName,
+			@Size(min = 10, message = "Mobile no should be in 10 digits") String mobileNumber,
+			@Email(message = "Email should be valid") String email,
+			@NotNull(message = "password should not be null") String password, Address addressCust, Set<Order> products,
+			Cart cart) {
 		super();
 		this.customerId = customerId;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.fullName = fullName;
 		this.mobileNumber = mobileNumber;
 		this.email = email;
-		this.address = address;
+		this.password = password;
 		this.addressCust = addressCust;
-		this.user = user;
 		this.products = products;
 		this.cart = cart;
 	}
+
+
 
 	public int getCustomerId() {
 		return customerId;
 	}
 
+
+
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
 
-	public String getFirstName() {
-		return firstName;
+
+
+	public String getFullName() {
+		return fullName;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 
-	public String getLastName() {
-		return lastName;
-	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
 
 	public String getMobileNumber() {
 		return mobileNumber;
 	}
 
+
+
 	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
+
+
 
 	public String getEmail() {
 		return email;
 	}
 
+
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public String getAddress() {
-		return address;
+
+
+	public String getPassword() {
+		return password;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
+
 
 	public Address getAddressCust() {
 		return addressCust;
 	}
+
+
 
 	public void setAddressCust(Address addressCust) {
 		this.addressCust = addressCust;
 	}
 
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
 
 	public Set<Order> getProducts() {
 		return products;
 	}
 
+
+
 	public void setProducts(Set<Order> products) {
 		this.products = products;
 	}
+
+
 
 	public Cart getCart() {
 		return cart;
 	}
 
+
+
 	public void setCart(Cart cart) {
 		this.cart = cart;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Customer [customerId=" + customerId + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", mobileNumber=" + mobileNumber + ", email=" + email + ", address=" + address + ", addressCust="
-				+ addressCust + ", user=" + user + ", products=" + products + ", cart=" + cart + "]";
+		return "Customer [customerId=" + customerId + ", fullName=" + fullName + ", mobileNumber=" + mobileNumber
+				+ ", email=" + email + ", password=" + password + ", addressCust=" + addressCust + ", products="
+				+ products + ", cart=" + cart + "]";
 	}
 
-
+	
 	
 }

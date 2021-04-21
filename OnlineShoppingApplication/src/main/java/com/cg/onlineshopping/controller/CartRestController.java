@@ -2,6 +2,8 @@ package com.cg.onlineshopping.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,24 +38,31 @@ public class CartRestController {
 	{
 		return cartService.addProductToCart(cart, product, quantity);
 	}*/
-	public Cart addCart(@RequestBody Cart cart)
+	public Cart addCart(@Valid @RequestBody Cart cart)
 	{
 		logger.info("Cart addCart()");
+		System.out.println("cart" +cart);
 		return cartService.addCart(cart);
 	}
 
-	@DeleteMapping("/cartId{cartId}")
-	public Cart removeCart(@PathVariable("cartId") int cartId)
+	@DeleteMapping("/cart/{cartId}")
+	public List<Cart> removeCart(@PathVariable("cartId") int cartId)
 	{
 		logger.info("Cart removeCart()");
 		return cartService.removeCart(cartId);
 	}
 
 	@GetMapping("/cart/{customerId}")
-	public Cart viewAllCustomer(@PathVariable("customerId")int customerId)
+	public List<Cart> viewAllCustomer(@PathVariable("customerId")int customerId)
 	{
 		logger.info("Cart viewCustomer()");
 		return cartService.viewCustomer(customerId);
+	}
+	
+	@GetMapping("/cart")
+	public List<Cart> allCarts(){
+		logger.info("Cart allCarts()");
+		return cartService.allCarts();
 	}
 
 	/*@DeleteMapping("/cart")
